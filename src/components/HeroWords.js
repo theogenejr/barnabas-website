@@ -1,0 +1,48 @@
+import React from "react"
+import { motion } from "framer-motion"
+
+const HeroWords = () => {
+  return (
+    <div className="absolute left-4 right-0 mx-6 text-slate-200">
+      <div className="flex justify-between items-center flex-wrap gap-8">
+        <div className="flex flex-col uppercase font-black gap-10 text-5xl">
+          <motion.span
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 2 }}
+            className="flex items-start flex-col gap-2"
+          >
+            community activist
+            <motion.div
+              initial={{ height: 16, width: 0 }}
+              animate={{ height: 16, width: 128 }}
+              transition={{ duration: 1, delay: 3 }}
+              className=" bg-blue-700"
+            ></motion.div>
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 4 }}
+            className="sm:text-8xl text-6xl flex items-start flex-col"
+          >
+            musician
+            <motion.div
+              initial={{ height: 16, width: 0 }}
+              animate={{ height: 16, width: 60 }}
+              transition={{ duration: 1, delay: 5 }}
+              className=" bg-blue-700"
+            ></motion.div>
+          </motion.span>
+        </div>
+
+        {/* <div className="flex flex-col mr-10 items-center">
+          <span className="text-3xl font-black">Madan ILOT </span>
+          <span> (That's Hello in Bari)</span>
+        </div> */}
+      </div>
+    </div>
+  )
+}
+
+export default HeroWords
