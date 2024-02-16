@@ -12,7 +12,8 @@ const Logo = () => {
           alt="Mobile Logo"
           className="w-12 h-auto md:hidden" // Hide on medium and larger screens
         />
-
+      </Link>
+      <Link to="/">
         {/* Logo for larger screens */}
         <StaticImage
           src="../images/lg-logo-trans.png"
