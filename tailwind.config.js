@@ -6,11 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        sofia:["'Sofia Sans', sans-serif"],
+      fontFamily: {
+        sofia: ["'Sofia Sans', sans-serif"],
       },
-      colors:{},
-      
+      colors: {
+        goodBlue: "#048AF9",
+      },
     },
   },
   plugins: [],

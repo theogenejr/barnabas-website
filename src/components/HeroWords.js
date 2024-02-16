@@ -17,7 +17,7 @@ const HeroWords = () => {
               initial={{ height: 16, width: 0 }}
               animate={{ height: 16, width: 128 }}
               transition={{ duration: 1, delay: 3 }}
-              className=" bg-blue-700"
+              className=" bg-goodBlue"
             ></motion.div>
           </motion.span>
           <motion.span
@@ -31,7 +31,7 @@ const HeroWords = () => {
               initial={{ height: 16, width: 0 }}
               animate={{ height: 16, width: 60 }}
               transition={{ duration: 1, delay: 5 }}
-              className=" bg-blue-700"
+              className=" bg-goodBlue"
             ></motion.div>
           </motion.span>
         </div>

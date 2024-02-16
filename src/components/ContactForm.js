@@ -144,7 +144,7 @@ const ContactForm = () => {
         <input
           type="checkbox"
           id="checkbox-id"
-          className="appearance-none w-3.5 h-3.5 rounded-full border-[1px] border-blue-700 bg-transparent checked:bg-blue-700 focus:outline-none transition duration-200 flex"
+          className="appearance-none w-3.5 h-3.5 rounded-full border-[1px] border-goodBlue bg-transparent checked:bg-goodBlue focus:outline-none transition duration-200 flex"
           value={newsletter}
           onChange={handleCheck}
         />
@@ -154,8 +154,8 @@ const ContactForm = () => {
       </label>
 
       <button
-        className={`bg-blue-700 ${
-          messageType === "loading" ? "hover:bg-blue-700 hover:text-white" : ""
+        className={`bg-goodBlue ${
+          messageType === "loading" ? "hover:bg-goodBlue hover:text-white" : ""
         } rounded-full px-9 py-2 transition-all text-white mt-10 mb-2 uppercase text-base font-extrabold hover:bg-black min-w-48 hover:text-blue-400`}
         type="submit"
         disabled={messageType === "loading"}

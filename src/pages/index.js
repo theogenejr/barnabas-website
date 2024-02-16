@@ -12,7 +12,7 @@ const ContactPage = () => (
       <HeroBg />
       <HeroWords />
     </div>
-    <div className="w-full min-w-screen bg-blue-700 py-8 px-8 rounded-3xl mb-10">
+    <div className="w-full min-w-screen bg-goodBlue py-8 px-8 rounded-3xl mb-10">
       <WelcomingSection />
     </div>
   </Layout>

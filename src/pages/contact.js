@@ -16,7 +16,7 @@ const ContactPage = () => (
               initial={{ height: 16, width: 0 }}
               animate={{ height: 16, width: 100 }}
               transition={{ duration: 1, delay: 0 }}
-              className=" bg-blue-700"
+              className=" bg-goodBlue"
             ></motion.div>
           </h2>
           <div className="text-xs mt-10">
@@ -35,7 +35,7 @@ const ContactPage = () => (
             you!
           </div>
           <div className=" flex-col mt-14 hidden lg:flex">
-            <h2 className="text-blue-700 font-bold text-2xl mb-4">
+            <h2 className="text-goodBlue font-bold text-2xl mb-4">
               Leave a message
             </h2>
             <span>Mvara - Sudan Zone, Arua, Uganda </span>
@@ -51,7 +51,7 @@ const ContactPage = () => (
       </div>
 
       <div className=" flex-col my-14 flex lg:hidden">
-        <h2 className="text-blue-700 font-bold text-2xl mb-4">
+        <h2 className="text-goodBlue font-bold text-2xl mb-4">
           Leave a message
         </h2>
         <div>
