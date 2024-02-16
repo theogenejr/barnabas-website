@@ -15,7 +15,6 @@ const HeroBg = () => {
       <StaticImage
         src="../images/bg3.jpeg"
         alt="hero image"
-        loading="eager"
         className=" h-full w-full object-cover"
       />
     </motion.div>
