@@ -11,53 +11,51 @@ const Navbar = () => {
   return (
     <header className=" h-16 fixed top-0 left-0 right-0 z-20 transform ease-[cubic-bezier(0.25, 0.25, 0, 1)] duration-300">
       <div className="flex mx-4 rounded-b-3xl  shadow-md bg-white h-full justify-between px-6 *:w-1/3 lg:px-24 items-center">
-        <div>
-          <ul className="lg:flex hidden gap-10">
-            <li className="">
-              <Link
-                to="/about"
-                activeClassName="text-blue-700"
-                className="text-sm font-black uppercase cursor-pointer text-black hover:text-blue-700 transition duration-200"
-              >
-                About
-              </Link>
-            </li>
-            <li className="">
-              <Link
-                to="/shop"
-                activeClassName="text-blue-700"
-                className="text-sm font-black uppercase cursor-pointer text-black hover:text-blue-700 transition duration-200"
-              >
-                Shop
-              </Link>
-            </li>
-            <li className="">
-              <Link
-                to="/blog"
-                activeClassName="text-blue-700"
-                className="text-sm font-black uppercase cursor-pointer text-black hover:text-blue-700 transition duration-200"
-              >
-                Blog
-              </Link>
-            </li>
-            <li className="">
-              <Link
-                to="/music"
-                activeClassName="text-blue-700"
-                className="text-sm font-black uppercase cursor-pointer text-black hover:text-blue-700 transition duration-200"
-              >
-                music
-              </Link>
-            </li>
-          </ul>
-          <div className="z-30">
-            <span
-              onClick={() => setMenu(!menu)}
-              className={` lg:hidden ${linkStyles} `}
+        <ul className="lg:flex hidden gap-10">
+          <li className="">
+            <Link
+              to="/about"
+              activeClassName="text-blue-700"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-blue-700 transition duration-200"
             >
-              {menu ? "close" : "menu"}
-            </span>
-          </div>
+              About
+            </Link>
+          </li>
+          <li className="">
+            <Link
+              to="/shop"
+              activeClassName="text-blue-700"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-blue-700 transition duration-200"
+            >
+              Shop
+            </Link>
+          </li>
+          <li className="">
+            <Link
+              to="/blog"
+              activeClassName="text-blue-700"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-blue-700 transition duration-200"
+            >
+              Blog
+            </Link>
+          </li>
+          <li className="">
+            <Link
+              to="/music"
+              activeClassName="text-blue-700"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-blue-700 transition duration-200"
+            >
+              music
+            </Link>
+          </li>
+        </ul>
+        <div className="z-30 lg:hidden">
+          <span
+            onClick={() => setMenu(!menu)}
+            className={` lg:hidden ${linkStyles} `}
+          >
+            {menu ? "close" : "menu"}
+          </span>
         </div>
         <Logo />
         <div className="flex items-center gap-2 justify-end">
