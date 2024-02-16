@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 const ContactPage = () => (
   <Layout>
-    <div className="px-4 py-0">
+    <div className="px-4 py-0 mb-16">
       <div className="flex flex-col lg:flex-row gap-16 lg:px-8 mt-16">
         <div className="lg:max-w-[40vw]">
           <h2 className=" font-bold text-4xl sm:text-6xl flex flex-col">
