@@ -14,6 +14,7 @@ const HeroBg = () => {
     >
       <StaticImage
         src="../images/bg3.jpeg"
+        placeholder="blurred"
         alt="hero image"
         className=" h-full w-full object-cover"
       />
