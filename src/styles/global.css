@@ -4,6 +4,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@1;100;200;300;400;500;600;700;800;900;1000&family=Sofia+Sans+Extra+Condensed:wght@1;100;200;300;400;500;600;700;800;900;1000&family=Sofia+Sans:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap");
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+} */
+
 .menu-mobile {
   transition: opacity 0.25s ease-in-out;
   position: absolute;

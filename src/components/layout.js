@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
     <div className="font-sofia bg-slate-100">
       <Navbar />
       <div>
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen pt-16">{children}</main>
       </div>
       <Footer />
     </div>

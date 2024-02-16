@@ -50,7 +50,7 @@ const ContactForm = () => {
   return (
     <form ref={form} onSubmit={handleSubmit} className="w-full">
       <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-8 md:flex-row">
+        <div className="flex flex-col gap-4 sm:gap-8 md:flex-row">
           <div className="w-full relative bg-white rounded-full px-8 py-2 flex items-center group">
             <input
               type="text"

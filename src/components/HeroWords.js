@@ -10,7 +10,7 @@ const HeroWords = () => {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 2 }}
-            className="flex items-start flex-col gap-2"
+            className="sm:text-6xl text-3xl flex items-start flex-col"
           >
             community activist
             <motion.div
@@ -24,7 +24,7 @@ const HeroWords = () => {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 4 }}
-            className="sm:text-8xl text-6xl flex items-start flex-col"
+            className="sm:text-8xl text-4xl flex items-start flex-col"
           >
             musician
             <motion.div

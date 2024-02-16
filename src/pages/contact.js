@@ -3,13 +3,22 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ContactForm from "../components/ContactForm"
+import { motion } from "framer-motion"
 
 const ContactPage = () => (
   <Layout>
-    <div className="px-4 py-8">
+    <div className="px-4 py-0">
       <div className="flex flex-col lg:flex-row gap-16 lg:px-8 mt-16">
         <div className="lg:max-w-[40vw]">
-          <h2 className=" font-bold text-6xl ">Get in touch</h2>
+          <h2 className=" font-bold text-4xl sm:text-6xl flex flex-col">
+            Get in touch{" "}
+            <motion.div
+              initial={{ height: 16, width: 0 }}
+              animate={{ height: 16, width: 100 }}
+              transition={{ duration: 1, delay: 0 }}
+              className=" bg-blue-700"
+            ></motion.div>
+          </h2>
           <div className="text-xs mt-10">
             If you'd like to chat or meet up for a cup of coffee, I'd love to
             hear from you! Please don't hesitate to contact me with any
@@ -48,7 +57,7 @@ const ContactPage = () => (
         <div>
           <a href="http://"></a> Mvara - Sudan Zone, Arua, Uganda
         </div>
-        <div className="flex gap-4 my-1 font-bold">
+        <div className="flex flex-wrap gap-4 my-1 font-bold">
           <div>
             <a href="tel:+256 775308378">+256 775308378</a>
           </div>
