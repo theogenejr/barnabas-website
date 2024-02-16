@@ -11,6 +11,7 @@ const Logo = () => {
           <StaticImage
             src="../images/sm-logo-trans.png"
             alt="Mobile Logo"
+            placeholder="blurred"
             className="" // Hide on medium and larger screens
           />
         </Link>
@@ -21,6 +22,7 @@ const Logo = () => {
           <StaticImage
             src="../images/lg-logo-trans.png"
             alt="Desktop Logo"
+            placeholder="blurred"
             className="" // Show on medium and larger screens
           />
         </Link>
