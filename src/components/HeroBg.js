@@ -3,12 +3,11 @@ import { motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 
 const HeroBg = () => {
-  const [fullHeight, setfullHeight] = useState("100%")
   return (
     <motion.div
-      initial={{ height: "95%", height: 0, borderRadius: 0 }}
-      animate={{ height: "95%", height: fullHeight, borderRadius: "1.5rem" }}
-      transition={{ duration: 2 }}
+      initial={{ height: 0, borderRadius: 0 }}
+      animate={{ height: "95%", height: "100%", borderRadius: "1.5rem" }}
+      transition={{ duration: 1 }}
       className={`absolute top-0 right-0 overflow-hidden 
         `}
     >

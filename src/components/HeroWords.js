@@ -9,28 +9,28 @@ const HeroWords = () => {
           <motion.span
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 2 }}
+            transition={{ duration: 1, delay: 1 }}
             className="sm:text-6xl text-3xl flex items-start flex-col"
           >
             community activist
             <motion.div
               initial={{ height: 16, width: 0 }}
               animate={{ height: 16, width: 128 }}
-              transition={{ duration: 1, delay: 3 }}
+              transition={{ duration: 1, delay: 2 }}
               className=" bg-goodBlue"
             ></motion.div>
           </motion.span>
           <motion.span
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 4 }}
+            transition={{ duration: 1, delay: 3 }}
             className="sm:text-8xl text-4xl flex items-start flex-col"
           >
             musician
             <motion.div
               initial={{ height: 16, width: 0 }}
               animate={{ height: 16, width: 60 }}
-              transition={{ duration: 1, delay: 5 }}
+              transition={{ duration: 1, delay: 4 }}
               className=" bg-goodBlue"
             ></motion.div>
           </motion.span>

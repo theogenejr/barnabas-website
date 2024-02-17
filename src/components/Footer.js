@@ -42,7 +42,7 @@ export const Footer = () => {
   }
 
   return (
-    <div className=" text-white rounded-t-3xl  bg-goodBlue py-10 md:py-32 sm:px-20 px-4">
+    <div className="  text-white rounded-t-3xl  bg-goodBlue py-10 md:py-32 sm:px-20 px-4">
       <div className="flex justify-stretch items-start md:gap-20 gap-10 flex-col lg:flex-row w-full">
         <ul className="flex w-full lg:w-1/2 flex-wrap gap-4 items-center justify-center lg:justify-between">
           <li className="">
