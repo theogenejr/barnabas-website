@@ -33,7 +33,7 @@ const WelcomingSection = () => {
           <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-80">
             <StaticImage
               src="../images/hero2.jpg"
-              className="max-h-80 w-full object-cover"
+              className="h-80 w-full object-cover"
               alt="descriptive image"
             />
           </div>
@@ -52,8 +52,8 @@ const WelcomingSection = () => {
           </div>
           <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-80">
             <StaticImage
-              src="../images/img1.jpg"
-              className="max-h-80 w-full object-cover"
+              src="../images/img2.png"
+              className="h-80 w-full object-cover"
             />
           </div>
         </div>
@@ -70,7 +70,7 @@ const WelcomingSection = () => {
           <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-80">
             <StaticImage
               src="../images/img3.jpg"
-              className="max-h-80 w-full object-cover"
+              className="h-80 w-full object-cover"
             />
           </div>
         </div>
