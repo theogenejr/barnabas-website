@@ -15,7 +15,7 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
-    'gatsby-plugin-postcss',
+    "gatsby-plugin-postcss",
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -32,7 +32,7 @@ module.exports = {
         name: `Barnabas Samuel`,
         short_name: `Barnabas Samuel`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#048AF9`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
