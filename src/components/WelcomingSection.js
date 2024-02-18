@@ -93,7 +93,7 @@ const WelcomingSection = () => {
           </div>
           <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-96">
             <StaticImage
-              src="../images/img1.jpg"
+              src="../images/philantropy.jpg"
               className=" w-full h-full object-cover"
               alt="descriptive image"
             />
