@@ -3,7 +3,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import HeroWords from "../components/HeroWords"
 import HeroBg from "../components/HeroBg"
-import { StaticImage } from "gatsby-plugin-image"
 import WelcomingSection from "../components/WelcomingSection"
 
 const ContactPage = () => (
