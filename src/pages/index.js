@@ -4,6 +4,7 @@ import Seo from "../components/seo"
 import HeroWords from "../components/HeroWords"
 import HeroBg from "../components/HeroBg"
 import WelcomingSection from "../components/WelcomingSection"
+import Subscription from "../components/Subscription"
 
 const ContactPage = () => (
   <Layout>
@@ -13,6 +14,9 @@ const ContactPage = () => (
     </div>
     <div className=" min-w-screen mx-4 border-x-2 border-t-2 border-goodBlue py-8 px-8 rounded-t-3xl mb-10">
       <WelcomingSection />
+    </div>
+    <div className="mx-4 my-4">
+      <Subscription />
     </div>
   </Layout>
 )

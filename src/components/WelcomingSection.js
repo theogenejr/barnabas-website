@@ -2,6 +2,7 @@
 import React, { useRef } from "react"
 import { motion, useTransform, useScroll, useSpring } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 
 const WelcomingSection = () => {
   const targetRef1 = useRef(null)
@@ -122,42 +123,20 @@ const WelcomingSection = () => {
           </div>
         </motion.div>
       </div>
+      <div className="flex flex-col md:flex-row mt-16 gap-4">
+        <span className="text-lg">
+          Thank you for stopping by. I think you'll like it here.
+        </span>
+        <Link to="/about">
+          <div className="hover:text-goodBlue">
+            <span className=" uppercase text-xl font-bold underline">
+              Read more about my story
+            </span>
+          </div>
+        </Link>
+      </div>
     </div>
   )
 }
 
 export default WelcomingSection
-
-// import { motion, useViewportScroll, useTransform } from "framer-motion"
-
-// const OpacityScrollEffect = () => {
-//   const { scrollYProgress } = useViewportScroll()
-
-//   // Define the opacity range (from 0 to 1) based on scroll progress
-//   const opacity = useTransform(scrollYProgress, [0, 1], [0, 1])
-
-//   return (
-//     <div className="container">
-//       <motion.div
-//         className="w-full h-[30vh] bg-black my-20"
-//         style={{ opacity }}
-//       >
-//         Content 1
-//       </motion.div>
-//       <motion.div
-//         className="w-full h-[30vh] bg-red-950 my-20"
-//         style={{ opacity }}
-//       >
-//         Content 2
-//       </motion.div>
-//       <motion.div
-//         className="w-full h-[30vh] bg-blue-950 my-20"
-//         style={{ opacity }}
-//       >
-//         Content 3
-//       </motion.div>
-//     </div>
-//   )
-// }
-
-// export default OpacityScrollEffect
