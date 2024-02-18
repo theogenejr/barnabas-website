@@ -35,11 +35,6 @@ const HeroWords = () => {
             ></motion.div>
           </motion.span>
         </div>
-
-        {/* <div className="flex flex-col mr-10 items-center">
-          <span className="text-3xl font-black">Madan ILOT </span>
-          <span> (That's Hello in Bari)</span>
-        </div> */}
       </div>
     </div>
   )
