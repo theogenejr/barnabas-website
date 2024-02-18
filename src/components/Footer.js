@@ -113,7 +113,7 @@ export const Footer = () => {
               <div className="ml-6 h-2">
                 {messageType === "success" && (
                   <p className="text-green-500 text-xs">
-                    Message sent successfully
+                    Successfully signed up
                   </p>
                 )}
                 {messageType === "error" && (
@@ -125,7 +125,7 @@ export const Footer = () => {
                   </p>
                 )}
                 {messageType === "loading" && (
-                  <p className="text-gray-600 text-xs">Loading...</p>
+                  <p className="text-gray-600 text-xs">Signing up...</p>
                 )}
               </div>
               <label className="flex items-center mt-0 sm:mt-4">
