@@ -66,10 +66,10 @@ const WelcomingSection = () => {
               need.
             </p>
           </div>
-          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-80">
+          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-96">
             <StaticImage
-              src="../images/hero2.jpg"
-              className=" w-full object-cover"
+              src="../images/music-photo.jpg"
+              className=" w-full h-full object-cover"
               alt="descriptive image"
             />
           </div>
@@ -91,10 +91,10 @@ const WelcomingSection = () => {
               future for all.
             </p>
           </div>
-          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-80">
+          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-96">
             <StaticImage
-              src="../images/img2.png"
-              className=" w-full object-cover"
+              src="../images/img1.jpg"
+              className=" w-full h-full object-cover"
               alt="descriptive image"
             />
           </div>
@@ -114,10 +114,10 @@ const WelcomingSection = () => {
               journey of growth, learning, and making a difference.
             </p>
           </div>
-          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-80">
+          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-96">
             <StaticImage
               src="../images/img3.jpg"
-              className=" w-full object-cover"
+              className=" w-full h-full object-cover"
               alt="descriptive image"
             />
           </div>
@@ -129,7 +129,7 @@ const WelcomingSection = () => {
         </span>
         <Link to="/about">
           <div className="hover:text-goodBlue">
-            <span className=" uppercase text-xl font-bold underline">
+            <span className=" uppercase transition duration-200 text-xl font-bold underline">
               Read more about my story
             </span>
           </div>

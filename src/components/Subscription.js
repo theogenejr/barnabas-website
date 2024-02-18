@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 
 import emailjs from "@emailjs/browser"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Subscription = () => {
   const TEMPLATE_ID = "template_es8k9cw"
@@ -44,7 +45,7 @@ const Subscription = () => {
   }
 
   return (
-    <div className="min-h-[calc(100vh-140px)] bg-black rounded-3xl py-16 px-8 text-white text-3xl">
+    <div className="min-h-[calc(100vh-140px)] overflow-hidden bg-black rounded-3xl py-16 px-8 text-white text-3xl">
       <div className="flex flex-col uppercase ">
         <span className="text-xl font-bold">i have a</span>
         <span className="text-4xl font-black">newsletter</span>
