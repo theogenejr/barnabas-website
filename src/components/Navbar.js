@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className=" h-16 fixed top-0 left-0 right-0 z-20 transform ease-[cubic-bezier(0.25, 0.25, 0, 1)] duration-300">
-      <div className="flex mx-4 rounded-b-3xl  shadow-md bg-white h-full justify-between px-6 *:w-1/3 lg:px-24 items-center">
+      <div className="flex mx-4 rounded-b-3xl  shadow-md bg-white/95 h-full justify-between px-6 *:w-1/3 lg:px-24 items-center">
         <ul className="lg:flex hidden gap-10">
           <li className="">
             <Link
@@ -123,7 +123,7 @@ const Navbar = () => {
           menu ? "opacity-1" : "opacity-0"
         } ${
           menu ? "flex" : "hidden"
-        } pointer-events-none flex-col justify-between items-start menu-mobile`}
+        } pointer-events-none flex-col justify-between items-start menu-mobile backdrop-blur-sm`}
       >
         <div
           className={`${

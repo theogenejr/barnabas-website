@@ -13,7 +13,7 @@ import { Footer } from "./Footer"
 
 const Layout = ({ children }) => {
   return (
-    <div className="font-sofia bg-slate-100">
+    <div className="font-sofia bg-blue-50">
       <Navbar />
       <div>
         <main className="min-h-screen pt-16">{children}</main>

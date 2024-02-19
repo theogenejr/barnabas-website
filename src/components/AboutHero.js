@@ -12,7 +12,7 @@ const AboutHero = () => {
           className="absolute w-full h-full object-cover rounded-3xl"
         />
       </div>
-      <div className="flex flex-col absolute justify-center sm:justify-start h-full text-white uppercase m-8 my-8 sm:m-16">
+      <div className="flex flex-col absolute h-full text-white uppercase m-8 my-8 sm:m-16">
         <span className="text-xl font-bold sm:text-4xl">who is</span>
         <span className="text-4xl font-black sm:text-6xl">
           barnabas samuel <span className="ml-2">?</span>
