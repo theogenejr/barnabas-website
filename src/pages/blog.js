@@ -11,12 +11,7 @@ import Subscription from "../components/Subscription"
 const BlogPage = () => (
   <Layout>
     <div className="">
-      <motion.div
-        initial={{ height: 0, borderRadius: 0 }}
-        animate={{ height: "100%", borderRadius: "1.5rem" }}
-        transition={{ duration: 1 }}
-        className="mx-4 mt-2 relative max-h-96 rounded-3xl bg-blue-900"
-      >
+      <motion.div className="mx-4 mt-2 relative max-h-96 rounded-3xl bg-blue-900">
         <StaticImage
           src="../images/art2.jpeg"
           alt="banner-image"
