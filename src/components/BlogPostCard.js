@@ -16,7 +16,7 @@ const BlogPostCard = () => {
           className="h-full w-full rounded-2xl"
         />
       </div>
-      <div className="rounded-b-2xl flex-col absolute bottom-0 h-1/2 flex justify-end bg-gradient-to-t from-blue-600/90 to-transparent text-white  left-0 px-4 pb-6">
+      <div className="rounded-b-2xl flex-col absolute bottom-0 h-1/2 flex justify-end bg-gradient-to-t from-black/60 to-transparent text-white  left-0 px-4 pb-6">
         <h1 className="text-4xl font-extrabold">
           Smyrna My Son: Name and Song meaning
         </h1>

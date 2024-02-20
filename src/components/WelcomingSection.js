@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
 import React, { useRef } from "react"
-import { motion, useTransform, useScroll, useSpring } from "framer-motion"
+import { motion, useTransform, useScroll } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
