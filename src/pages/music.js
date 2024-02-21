@@ -57,7 +57,7 @@ const Music = () => {
       album: "sambara",
     },
     {
-      trackNumber: "08",
+      trackNumber: "09",
       title: "setetu",
       duration: "04:31",
       album: "sambara",
@@ -136,21 +136,100 @@ const Music = () => {
                   </span>
                   <span className="font-medium">2nd September, 2021</span>
                 </div>
-                <div className="flex flex-col mt-3">
-                  <span className="capitalize text-goodBlue font-semibold">
+                <div className="flex flex-col mt-4">
+                  <span className="capitalize text-goodBlue font-semibold text-2xl">
                     listen on
                   </span>
                 </div>
+                <div
+                  className="grid grid-cols-2 gap-4 place-items-center *:cursor-pointer justify-center w-full place-content-center"
+                  id="music-links"
+                >
+                  <a
+                    href="https://music.apple.com/ug/album/sambara/1581694430"
+                    target="_blank"
+                  >
+                    <div>
+                      <StaticImage
+                        src="../images/Apple Music.png"
+                        alt="apple"
+                      />
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://barnabassamuel.bandcamp.com/album/sambara"
+                    target="_blank"
+                  >
+                    <div>
+                      <StaticImage
+                        src="../images/Bandcamp Black.svg"
+                        alt="bandcamp"
+                      />
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://www.deezer.com/album/252744982"
+                    target="_blank"
+                  >
+                    <div>
+                      <StaticImage
+                        src="../images/Deezer Music New.svg"
+                        alt="deezer"
+                      />
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://music.apple.com/ug/album/sambara/1581694430"
+                    target="_blank"
+                  >
+                    <div>
+                      <StaticImage src="../images/iTunes.png" alt="itunes" />
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://open.spotify.com/album/3uaO0KE3UxzPRf7C7j1UQC?si=8Hnf6UO-SDG-7hfdO95jMQ"
+                    target="_blank"
+                  >
+                    <div>
+                      <StaticImage src="../images/spotify.svg" alt="spotify" />
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://tidal.com/browse/album/194484748"
+                    target="_blank"
+                  >
+                    <div>
+                      <StaticImage src="../images/Tidal.svg" alt="tidal" />
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://amazon.com/music/player/albums/B09CX1SNQT?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Mbn7Kyhv0HDuCYhqlYPre4Vb7"
+                    target="_blank"
+                  >
+                    <div>
+                      <StaticImage
+                        src="../images/Amazon Music.svg"
+                        alt="amazon"
+                      />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
-            <div className=""></div>
           </div>
         </div>
+
         <div className="w-full flex flex-col items-center my-4">
           <div className="w-[2px] h-40 bg-blue-700 items"></div>
         </div>
         <div className="w-full justify-center uppercase text-3xl font-bold flex gap-2">
-          <span>latest</span>
+          <span>album</span>
           <span className="text-goodBlue">tracks</span>
         </div>
         <div className="w-full bg-goodBlue/5 my-4 rounded-3xl py-8 px-4">
