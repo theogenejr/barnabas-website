@@ -3,52 +3,58 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Music = () => (
   <Layout>
-    <h1>Hi from the Music page</h1>
-    <p>Certainly! Here are 20 meaningful paragraphs that can be used for the music page of an artist or community artist's personal website:
-
-1. Welcome to the music page! Get ready to embark on a sonic journey filled with passion, creativity, and soul-stirring melodies.
-
-2. Our music is an expression of the human experience, crafted with love and delivered straight from the heart. Each song tells a story, resonating with emotions that connect us all.
-
-3. With a unique blend of genres, we strive to create a captivating musical experience that transcends boundaries and unites people from diverse backgrounds.
-
-4. We believe in the power of music to uplift, inspire, and ignite change. Through the universal language of melody and rhythm, we aim to touch hearts and leave a lasting impact on our listeners.
-
-5. Our songs are a reflection of our authentic selves, drawn from personal experiences, dreams, and the world around us. We hope they resonate with your own journey and offer solace or celebration.
-
-6. Collaborations lie at the heart of our artistic vision. We're passionate about working with talented musicians, producers, and lyricists to create something truly magical and unique.
-
-7. We believe in the importance of live performances and aim to create an immersive experience for our audiences. Join us on stage as we bring our music to life with electrifying energy and captivating presence.
-
-8. Music has the power to bring people together, and community is at the core of what we do. We strive to foster a sense of belonging and create a space where everyone feels seen, heard, and celebrated.
-
-9. Our musical influences are vast and varied, ranging from classic icons to contemporary innovators. We draw inspiration from a multitude of genres, infusing our sound with a distinctive blend of styles.
-
-10. We're dedicated to constantly pushing the boundaries of our creativity, experimenting with new sounds, and evolving as artists. Every track is an opportunity for growth and self-discovery.
-
-11. Our music is not just entertainment; it's a platform for expressing important social and personal messages. We aim to shed light on issues that matter and inspire conversations that promote change.
-
-12. We believe in the therapeutic power of music and its ability to heal and uplift. Our lyrics often touch upon themes of resilience, self-empowerment, and the strength of the human spirit.
-
-13. Devoted to our craft, we spend countless hours refining our songs, paying attention to every detail to ensure the highest quality of sound and production.
-
-14. We're grateful for our dedicated fanbase, whose unwavering support fuels our creativity and motivates us to keep pushing boundaries. You are an essential part of our musical family.
-
-15. Music is a universal language, and our intention is to create music that transcends cultures, languages, and borders. We hope to foster understanding and unity through the power of our melodies.
-
-16. We're thrilled to share our journey with you, from the early days of songwriting to the exhilarating moments on stage. Join us as we navigate the beautiful chaos of the music industry together.
-
-17. Our music is intended to evoke emotions, make you dance, or simply create a moment of pure escape. We hope it becomes a soundtrack to your life and that you find solace and joy within our melodies.
-
-18. Stay connected by signing up for our newsletter, where you'll receive exclusive updates, behind-the-scenes insights, and early access to new releases and upcoming shows.
-
-19. We love hearing from our fans and value your feedback. Reach out to us through our social media channels or drop us a message via the contact page. We can't wait to connect with you!
-
-20. Thank you for joining us on this musical adventure. We invite you to explore our sounds, dive into our lyrics, and let the music sweep you away. Together, let's celebrate the transformative power of music and keep the rhythm alive!</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="relative">
+      <div className="h-[calc(100vh-80px)] rounded-3xl overflow-hidden relative my-2 mx-4">
+        <div className="w-full h-full bg-black/50 rounded-3xl">
+          <StaticImage
+            src="../images/music1.png"
+            alt="hero image"
+            className=" h-full w-full object-cover rounded-3xl grayscale"
+          />
+        </div>
+        <div className="absolute w-full h-full bg-black/50 top-0 left-0 flex items-start pt-24 sm:pl-24 pl-6">
+          <div className="flex relative">
+            <span className="uppercase text-white text-6xl sm:text-8xl lg:text-9xl font-black z-20">
+              Music
+            </span>
+            <div className="bg-blue-800/50 sm:w-52 w-32 h-32  sm:h-52 md:w-72 md:h-72 absolute right-1/2 left-1/2 -top-10 sm:-right-36 md:-right-56 lg:-right-52 rounded-full z-10 sm:-top-14 md:-top-24 lg:-top-20"></div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-[72vh]  w-full flex flex-col items-center">
+        <span className="uppercase text-white text-sm mb-2">
+          scroll to discover
+        </span>
+        <div className="w-[2px] h-28 bg-blue-700 items"></div>
+      </div>
+      <div className="w-full flex flex-col px-4 py-24 items-center">
+        <p className="md:w-[65%] uppercase text-xl font-light text-slate-700">
+          Welcome to my musical realm. I approach music with a passion to play
+          and to rhythmically express myself. My music is a reflection of my
+          life experiences, as I draw inspiration from the events happening in
+          my world. Through my lyrics, I am able to channel the emotions that
+          arise from the circumstances and injustices that I or my community
+          have faced. My repertoire includes songs about peace, the impact of
+          war, anti-war music, displacement, and the hardships that I have
+          endured while living on the streets, in ghettos, and refugee camps. I
+          also sing about the trials and tribulations of living in extreme
+          poverty, and the hopes that I have for a better future. Moreover, my
+          music delves into the nuances of community life, love, and raising
+          awareness for the struggles of the oppressed.
+        </p>
+        <p className="md:w-[65%] uppercase text-xl font-light text-slate-700 mt-8">
+          As a community activist, I use my art to amplify the voices of those
+          who have been silenced, and to bring their issues to the forefront. My
+          music is a call to action, a rallying cry for change. Come, take a
+          listen, and let us explore the highs and lows of life, and the rhythm
+          that unites us all. - <b>Barnabas Samuel</b>
+        </p>
+      </div>
+    </div>
   </Layout>
 )
 
