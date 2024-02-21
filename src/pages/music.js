@@ -1,10 +1,11 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
+import scrollTo from "gatsby-plugin-smoothscroll"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import Subscription from "../components/Subscription"
+import MusicIcons from "../components/MusicIcons"
 
 const Music = () => {
   const tracks = [
@@ -81,8 +82,12 @@ const Music = () => {
               </span>
               <div className="bg-blue-800/50 sm:w-52 w-32 h-32  sm:h-52 md:w-72 md:h-72 absolute right-1/2 left-1/2 -top-10 sm:-right-36 md:-right-56 lg:-right-52 rounded-full z-10 sm:-top-14 md:-top-24 lg:-top-20"></div>
             </div>
+            <div className="absolute right-4 bottom-14 z-30">
+              <MusicIcons />
+            </div>
           </div>
         </div>
+
         <div className="absolute top-[72vh]  w-full flex flex-col items-center">
           <span className="uppercase text-white text-sm mb-2">
             scroll to discover
@@ -137,14 +142,14 @@ const Music = () => {
                   <span className="font-medium">2nd September, 2021</span>
                 </div>
                 <div className="flex flex-col mt-4">
-                  <span className="capitalize text-goodBlue font-semibold text-2xl">
+                  <span
+                    className="capitalize text-goodBlue font-semibold text-2xl"
+                    id="music-links"
+                  >
                     listen on
                   </span>
                 </div>
-                <div
-                  className="grid grid-cols-2 gap-4 place-items-center *:cursor-pointer justify-center w-full place-content-center"
-                  id="music-links"
-                >
+                <div className="grid grid-cols-2 gap-4 place-items-center *:cursor-pointer justify-center w-full place-content-center">
                   <a
                     href="https://music.apple.com/ug/album/sambara/1581694430"
                     target="_blank"
@@ -236,6 +241,7 @@ const Music = () => {
           <div className="border-t-[1px] flex flex-col border-goodBlue/50">
             {tracks.map(track => (
               <div
+                onClick={() => scrollTo("#music-links")}
                 key={track.trackNumber}
                 className="flex justify-between border-b-[1px] border-goodBlue/50 py-4 cursor-pointer hover:bg-goodBlue/10 sm:px-4 px-2"
               >
@@ -261,6 +267,64 @@ const Music = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="w-full flex flex-col items-center my-4">
+          <div className="w-[2px] h-40 bg-blue-700 items"></div>
+        </div>
+        <div className="w-full items-center flex flex-col">
+          <span className="uppercase font-extrabold text-6xl my-2">live!</span>
+          <span className="capitalize text-3xl text-goodBlue">
+            Get notified
+          </span>
+        </div>
+
+        <div className="flex w-full justify-center gap-2 mb-10 sm:gap-8 ">
+          <a href="https://www.bandsintown.com/a/15517139" target="_blank">
+            <button className="bg-black p-4 text-white text-2xl mt-4 font-extrabold hover:bg-black/80 rounded-full">
+              BandsInTown
+            </button>
+          </a>
+          <a
+            href=" https://www.songkick.com/artists/10231266-barnabas-samuel"
+            target="_blank"
+          >
+            <button className="bg-blue-700 p-4 text-white text-2xl mt-4 font-extrabold hover:bg-blue-700/80 rounded-full">
+              SongKick{" "}
+            </button>
+          </a>
+        </div>
+        <div className="w-full flex flex-col items-center my-4">
+          <div className="w-[2px] h-40 bg-blue-700 items"></div>
+        </div>
+        <div className="flex flex-col">
+          <div className="w-full justify-center uppercase text-3xl font-bold flex gap-2">
+            <span>latest</span>
+            <span className="text-goodBlue">video</span>
+          </div>{" "}
+          <div className="mt-8 flex items-center justify-center">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/YqLHZJYuvrU?si=WswghfRfX0OJhWEG"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="w-full flex justify-center mt-4 ">
+            <a
+              href="https://www.youtube.com/channel/UCbyqFOyo4p8528wrdt_D2hw "
+              target="_blank"
+            >
+              <span className="uppercase text-xl cursor-pointer hover:text-goodBlue flex items-start font-bold border-2 p-2 border-black hover:border-goodBlue rounded-full mt-4">
+                <span className="pr-2">explore More</span> <span>&#10230;</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div className="w-full flex flex-col items-center my-4">
+          <div className="w-[2px] h-40 bg-blue-700 items"></div>
         </div>
         <Subscription />
       </div>

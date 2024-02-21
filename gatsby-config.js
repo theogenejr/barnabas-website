@@ -15,6 +15,8 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    `gatsby-plugin-smoothscroll`,
+
     "gatsby-plugin-postcss",
     `gatsby-plugin-image`,
     {
