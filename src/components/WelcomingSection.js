@@ -53,7 +53,7 @@ const WelcomingSection = () => {
         <motion.div
           ref={targetRef1}
           style={{ opacity: opacity1, scale: scale1 }}
-          className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  h-[80vh] gap-6 items-center "
+          className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  md:h-[80vh] gap-6 items-center "
         >
           <div className="md:w-1/2 mb-10">
             <p className="text-base md:text-base lg:text-lg first-letter:font-bold first-letter:text-6xl snap-start">
@@ -66,7 +66,7 @@ const WelcomingSection = () => {
               need.
             </p>
           </div>
-          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-96">
+          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-96 h-full">
             <StaticImage
               src="../images/music-photo.jpg"
               className=" w-full h-full object-cover"
@@ -78,7 +78,7 @@ const WelcomingSection = () => {
         <motion.div
           ref={targetRef2}
           style={{ opacity: opacity2, scale: scale2 }}
-          className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  h-[80vh] gap-6 items-center "
+          className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  md:h-[80vh] gap-6 items-center "
         >
           {" "}
           <div className="md:w-1/2 mb-10">
@@ -103,7 +103,7 @@ const WelcomingSection = () => {
         <motion.div
           ref={targetRef3}
           style={{ opacity: opacity3, scale: scale3 }}
-          className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  h-[80vh] gap-6 items-center "
+          className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  md:h-[80vh] gap-6 items-center "
         >
           {" "}
           <div className="md:w-1/2 mb-10">
