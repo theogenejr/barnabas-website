@@ -10,7 +10,7 @@ const MusicIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="w-10 h-10 cursor-pointer apple-music">
+          <div className="w-8 h-8 cursor-pointer apple-music">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -25,7 +25,7 @@ const MusicIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="w-10 h-10 cursor-pointer spotify">
+          <div className="w-8 h-8 cursor-pointer spotify">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -36,13 +36,13 @@ const MusicIcons = () => {
           </div>
         </a>
         <a href="http://" target="_blank" rel="noopener noreferrer">
-          <div className="w-10 h-10 cursor-pointer bandcamp">
+          <div className="w-8 h-8 cursor-pointer bandcamp">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="40px"
-              height="40px"
+              width="32px"
+              height="32px"
               viewBox="0,0,256,256"
             >
               <g
@@ -72,13 +72,13 @@ const MusicIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="w-10 h-10 cursor-pointer amazon-music">
+          <div className="w-8 h-8 cursor-pointer amazon-music">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="40px"
-              height="40px"
+              width="32px"
+              height="32px"
               viewBox="0,0,256,256"
             >
               <g
@@ -108,13 +108,13 @@ const MusicIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="w-10 h-10 cursor-pointer deezer">
+          <div className="w-8 h-8 cursor-pointer deezer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="40px"
-              height="40px"
+              width="32px"
+              height="32px"
               viewBox="0,0,256,256"
             >
               <g
@@ -144,13 +144,13 @@ const MusicIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="w-10 h-10 cursor-pointer tidal">
+          <div className="w-8 h-8 cursor-pointer tidal">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="40px"
-              height="40px"
+              width="32px"
+              height="32px"
               viewBox="0,0,256,256"
             >
               <g
@@ -180,13 +180,13 @@ const MusicIcons = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="w-10 h-10 cursor-pointer itunes">
+          <div className="w-8 h-8 cursor-pointer itunes">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
-              width="40px"
-              height="40px"
+              width="32px"
+              height="32px"
               viewBox="0,0,256,256"
             >
               <g

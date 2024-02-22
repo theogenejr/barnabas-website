@@ -10,10 +10,7 @@ const ContactForm = () => {
 
   const form = useRef()
 
-  const [success, setSuccess] = useState(false)
-  const [errorMessage, setErrorMessage] = useState(false)
   const [newsletter, setNewsletter] = useState(false)
-  const [isSending, setIsSending] = useState(false)
   const [messageType, setMessageType] = useState(null) // Initialize to null
 
   function handleCheck(event) {
