@@ -5,8 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 const BlogPostCard = () => {
   return (
     <motion.div
-      initial={{ translateY: 0 }}
-      whileHover={{ translateY: -5 }}
+      initial={{ scale: 1 }}
+      whileHover={{ scale: 1.005 }}
       className="relative flex-grow bg-white cursor-pointer hover:shadow-xl hover:shadow-blue-200 h-[85vh] border-[1px] border-goodBlue md:min-w-[400px] md:max-w-[500px] rounded-2xl"
     >
       <div className="absolute h-full w-full rounded-2xl">

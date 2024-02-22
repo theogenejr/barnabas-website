@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -7,6 +6,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import Subscription from "../components/Subscription"
 import MusicIcons from "../components/MusicIcons"
 
+import bandcampLogo from "../images/Bandcamp Black.svg"
+import deezerLogo from "../images/Deezer Music New.svg"
+import spotifyLogo from "../images/spotify.svg"
+import tidalLogo from "../images/Tidal.svg"
+import amazonLogo from "../images/Amazon Music.svg"
 const Music = () => {
   const tracks = [
     {
@@ -167,10 +171,7 @@ const Music = () => {
                     target="_blank"
                   >
                     <div>
-                      <StaticImage
-                        src="../images/Bandcamp Black.svg"
-                        alt="bandcamp"
-                      />
+                      <img src={bandcampLogo} alt="bandcamp" />
                     </div>
                   </a>
 
@@ -179,10 +180,7 @@ const Music = () => {
                     target="_blank"
                   >
                     <div>
-                      <StaticImage
-                        src="../images/Deezer Music New.svg"
-                        alt="deezer"
-                      />
+                      <img src={deezerLogo} alt="deezer" className="w-full" />
                     </div>
                   </a>
 
@@ -200,7 +198,7 @@ const Music = () => {
                     target="_blank"
                   >
                     <div>
-                      <StaticImage src="../images/spotify.svg" alt="spotify" />
+                      <img src={spotifyLogo} alt="spotify" className="w-full" />
                     </div>
                   </a>
 
@@ -209,7 +207,7 @@ const Music = () => {
                     target="_blank"
                   >
                     <div>
-                      <StaticImage src="../images/Tidal.svg" alt="tidal" />
+                      <img src={tidalLogo} alt="tidal" className="w-full" />
                     </div>
                   </a>
 
@@ -218,10 +216,7 @@ const Music = () => {
                     target="_blank"
                   >
                     <div>
-                      <StaticImage
-                        src="../images/Amazon Music.svg"
-                        alt="amazon"
-                      />
+                      <img src={amazonLogo} alt="amazon" className="w-full" />
                     </div>
                   </a>
                 </div>
