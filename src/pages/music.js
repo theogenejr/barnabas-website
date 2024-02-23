@@ -194,20 +194,19 @@ const Music = () => {
                   </a>
 
                   <a
-                    href="https://open.spotify.com/album/3uaO0KE3UxzPRf7C7j1UQC?si=8Hnf6UO-SDG-7hfdO95jMQ"
-                    target="_blank"
-                  >
-                    <div>
-                      <img src={spotifyLogo} alt="spotify" className="w-full" />
-                    </div>
-                  </a>
-
-                  <a
                     href="https://tidal.com/browse/album/194484748"
                     target="_blank"
                   >
                     <div>
                       <img src={tidalLogo} alt="tidal" className="w-full" />
+                    </div>
+                  </a>
+                  <a
+                    href="https://open.spotify.com/album/3uaO0KE3UxzPRf7C7j1UQC?si=8Hnf6UO-SDG-7hfdO95jMQ"
+                    target="_blank"
+                  >
+                    <div>
+                      <img src={spotifyLogo} alt="spotify" className="w-full" />
                     </div>
                   </a>
 
