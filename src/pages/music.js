@@ -8,7 +8,7 @@ import MusicIcons from "../components/MusicIcons"
 
 import bandcampLogo from "../images/Bandcamp Black.svg"
 import deezerLogo from "../images/Deezer Music New.svg"
-import spotifyLogo from "../images/spotify.svg"
+import spotifyLogo from "../images/Spotify Black.svg"
 import tidalLogo from "../images/Tidal.svg"
 import amazonLogo from "../images/Amazon Music.svg"
 const Music = () => {
@@ -157,6 +157,7 @@ const Music = () => {
                   <a
                     href="https://music.apple.com/ug/album/sambara/1581694430"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div>
                       <StaticImage
@@ -168,6 +169,7 @@ const Music = () => {
                   <a
                     href="https://open.spotify.com/album/3uaO0KE3UxzPRf7C7j1UQC?si=8Hnf6UO-SDG-7hfdO95jMQ"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div>
                       <img src={spotifyLogo} alt="spotify" className="w-full" />
@@ -176,6 +178,7 @@ const Music = () => {
                   <a
                     href="https://barnabassamuel.bandcamp.com/album/sambara"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div>
                       <img src={bandcampLogo} alt="bandcamp" />
@@ -185,6 +188,7 @@ const Music = () => {
                   <a
                     href="https://www.deezer.com/album/252744982"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div>
                       <img src={deezerLogo} alt="deezer" className="w-full" />
@@ -194,6 +198,7 @@ const Music = () => {
                   <a
                     href="https://music.apple.com/ug/album/sambara/1581694430"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div>
                       <StaticImage src="../images/iTunes.png" alt="itunes" />
@@ -203,6 +208,7 @@ const Music = () => {
                   <a
                     href="https://tidal.com/browse/album/194484748"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div>
                       <img src={tidalLogo} alt="tidal" className="w-full" />
@@ -212,6 +218,7 @@ const Music = () => {
                   <a
                     href="https://amazon.com/music/player/albums/B09CX1SNQT?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Mbn7Kyhv0HDuCYhqlYPre4Vb7"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <div>
                       <img src={amazonLogo} alt="amazon" className="w-full" />
