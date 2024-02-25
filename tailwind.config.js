@@ -12,6 +12,9 @@ module.exports = {
       colors: {
         goodBlue: "#048AF9",
       },
+      screens: {
+        semiLg: "950px",
+      },
     },
   },
   plugins: [],

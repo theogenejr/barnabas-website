@@ -2,39 +2,38 @@ import React from "react"
 import { motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 
-const BlogPostCard = () => {
+const BlogPostCard = ({ title, date, excerpt }) => {
   return (
-    <motion.div
-      initial={{ scale: 1 }}
-      whileHover={{ scale: 1.005 }}
-      className="relative flex-grow bg-white cursor-pointer hover:shadow-xl hover:shadow-blue-200 h-[85vh] border-[1px] border-goodBlue md:min-w-[400px] md:max-w-[500px] rounded-2xl"
-    >
-      <div className="absolute h-full w-full rounded-2xl">
+    <div className="w-full border-2 border-blue-800 rounded-3xl shadow-md h-fit">
+      <div className=" border-b-2 h-96 border-blue-800 border-dotted">
         <StaticImage
           src="../images/son2.jpg"
-          alt="blog-image"
-          className="h-full w-full rounded-2xl"
+          alt="smyrna"
+          className="h-full rounded-t-3xl"
         />
       </div>
-      <div className="rounded-b-2xl flex-col absolute bottom-0 h-1/2 flex justify-end bg-gradient-to-t from-black/60 to-transparent text-white  left-0 px-4 pb-6">
-        <h1 className="text-4xl font-extrabold">
-          Smyrna My Son: Name and Song meaning
-        </h1>
-        <div className="flex justify-between mt-4">
-          <span>5 min read</span>
-          <div className="text-white w-5 h-w-5 mr-8 relative">
-            <span className="absolute -bottom-2 -right-2">5</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-            >
-              <path d="M7.29117 20.8242L2 22L3.17581 16.7088C2.42544 15.3056 2 13.7025 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C10.2975 22 8.6944 21.5746 7.29117 20.8242ZM7.58075 18.711L8.23428 19.0605C9.38248 19.6745 10.6655 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 13.3345 4.32549 14.6175 4.93949 15.7657L5.28896 16.4192L4.63416 19.3658L7.58075 18.711Z"></path>
-            </svg>
+      <div className="p-6 h-1/2">
+        <div className="text-[#6b7280] flex flex-wrap mb-6 text-lg gap-4 items-center">
+          <span className="">Monday, February 19, 2024</span>
+          <div className="w-[2px] h-[2px] rounded-full bg-[#6b7280]"></div>
+          <span className="">3 Min Read</span>
+        </div>
+        <div className="text-[#141414] cursor-pointer text-3xl font-bold">
+          Discovering new ideas on hello world.
+        </div>
+        <div className="text-[#6b7280] text-xl mt-2 text-ellipsis overflow-hidden">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod,
+          perferendis! Tempore facilis pariatur praesentium minima minus
+          voluptas asperiores dolores? Unde veritatis at autem consequatur
+          cupiditate, vero amet iure iste non.
+        </div>
+        <div className="my-6 group text-blue-500 transition-all duration-300 ease-in-out w-fit">
+          <div className="bg-left-bottom bg-gradient-to-r from-blue-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize cursor-pointer font-bold text-lg">
+            read more
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 

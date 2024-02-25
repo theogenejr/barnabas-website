@@ -29,6 +29,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: "http://barnabas.local/graphql",
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Barnabas Samuel`,
