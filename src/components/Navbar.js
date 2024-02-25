@@ -23,13 +23,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="">
-            <Link
-              to="/shop"
-              activeClassName="text-goodBlue"
+            <a
+              href=" https://www.bonfire.com/store/barnabas-samuel/"
               className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-200"
             >
               Shop
-            </Link>
+            </a>
           </li>
           <li className="">
             <Link
@@ -104,13 +103,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li onClick={() => setMenu(false)} className="p-0 mb-8">
-              <Link
-                to="/shop"
-                activeClassName="text-goodBlue"
+              <a
+                href=" https://www.bonfire.com/store/barnabas-samuel/"
                 className="text-4xl font-black uppercase inline-block align-top cursor-pointer text-black hover:text-goodBlue"
               >
                 Shop
-              </Link>
+              </a>
             </li>
             <li onClick={() => setMenu(false)} className="p-0 mb-8">
               <Link
