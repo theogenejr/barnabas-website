@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Barnabas Samuel -Community Activist and Musician`,
+    title: `Barnabas Samuel - Community Activist and Musician`,
     description: `A website for Barnabas Samuel - Activist and musician`,
     author: `@theogenejr`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
