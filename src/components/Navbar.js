@@ -130,6 +130,15 @@ const Navbar = () => {
                 music
               </Link>
             </li>
+            <li onClick={() => setMenu(false)} className="p-0 mb-8">
+              <Link
+                to="/contact"
+                activeClassName="text-goodBlue"
+                className="text-4xl font-black uppercase inline-block align-top cursor-pointer text-black hover:text-goodBlue"
+              >
+                contact
+              </Link>
+            </li>
           </ul>
           <div className="md:hidden flex">
             <SocialMedia effectColor={"goodBlue"} />
