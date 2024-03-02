@@ -3,7 +3,7 @@ import React from "react"
 const SocialMedia = ({ effectColor }) => {
   return (
     <div className="*:text-black gap-3 flex *:h-5 *:w-5 *:cursor-pointer mr-10">
-      <a href="http://">
+      <a href="https://facebook.com/BarnabasAfrica">
         <div className={`hover:text-${effectColor} transition duration-200`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +14,7 @@ const SocialMedia = ({ effectColor }) => {
           </svg>
         </div>
       </a>
-      <a href="http://">
+      <a href="https://x.com/BarnabasAfrica">
         <div className={`hover:text-${effectColor} transition duration-200`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ const SocialMedia = ({ effectColor }) => {
           </svg>
         </div>
       </a>
-      <a href="http://">
+      <a href=" https://www.linkedin.com/in/barnabasafrica/">
         <div className={`hover:text-${effectColor} transition duration-200`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ const SocialMedia = ({ effectColor }) => {
           </svg>
         </div>
       </a>
-      <a href="http://">
+      <a href="https://www.instagram.com/barnabasafrica">
         <div className={`hover:text-${effectColor} transition duration-200`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

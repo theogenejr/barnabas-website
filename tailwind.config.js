@@ -10,7 +10,7 @@ module.exports = {
         sofia: ["'Sofia Sans', sans-serif"],
       },
       colors: {
-        goodBlue: "#048AF9",
+        goodBlue: "#04509F",
       },
       screens: {
         semiLg: "950px",

@@ -7,22 +7,11 @@ import Seo from "../components/seo"
 import BlogPostCard from "../components/BlogPostCard"
 import { StaticImage } from "gatsby-plugin-image"
 import Subscription from "../components/Subscription"
+import useLatestBlogPosts from "../hooks/useLatestBlogPosts"
 
 const BlogPage = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allWpPost {
-        nodes {
-          id
-          date
-          title
-          excerpt
-          uri
-        }
-      }
-    }
-  `)
-  const { allWpPost } = data
+  const data = useLatestBlogPosts()
+
   return (
     <Layout>
       <div className="">
@@ -50,8 +39,15 @@ const BlogPage = () => {
           </p>
         </div>
         <div className="grid gap-8 grid-cols-1 semiLg:grid-cols-2  md:p-8 mt-16 p-4 my-8">
-          {allWpPost.nodes.map(post => (
-            <BlogPostCard key={post.id} title={post.title} date={post.date} />
+          {data.allWpPost.nodes.map(post => (
+            <BlogPostCard
+              key={post.id}
+              title={post.title}
+              date={post.date}
+              excerpt={post.excerpt}
+              featuredImage={post.featuredImage.node}
+              uri={post.uri}
+            />
           ))}
         </div>
         <Subscription />

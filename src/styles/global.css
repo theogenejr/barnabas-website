@@ -54,3 +54,10 @@ body {
   width: 320px;
   height: 600px;
 }
+
+.wp-content p,
+.wp-content ul,
+.wp-content li,
+.wp-content em {
+  margin-bottom: 16px;
+}

@@ -12,6 +12,10 @@ const Navbar = () => {
   return (
     <header className=" h-16 fixed top-0 left-0 right-0 z-20 transform ease-[cubic-bezier(0.25, 0.25, 0, 1)] duration-300">
       <div className="flex mx-4 rounded-b-3xl  shadow-md bg-white/95 h-full justify-between px-6 *:w-1/3 lg:px-24 items-center">
+        <div className="justify-start flex">
+          <Logo />
+        </div>
+
         <ul className="lg:flex hidden gap-10">
           <li className="">
             <Link
@@ -48,34 +52,32 @@ const Navbar = () => {
               music
             </Link>
           </li>
-        </ul>
-        <div className="z-30 lg:hidden">
-          <span
-            onClick={() => setMenu(!menu)}
-            className={` lg:hidden ${linkStyles} `}
-          >
-            {menu ? "close" : "menu"}
-          </span>
-        </div>
-        <Logo />
-        <div className="flex items-center gap-2 justify-end">
-          <div className="hidden md:flex">
-            <SocialMedia effectColor={"goodBlue"} />
-          </div>
-          <div className="">
-            <Link to="/contact">
-              <button className="hidden lg:flex font-bold bg-black uppercase px-7 hover:bg-goodBlue transition-all py-2 rounded-full text-white">
-                contact
-              </button>
-            </Link>
+          <li className="">
             <Link
               to="/contact"
               activeClassName="text-goodBlue"
-              className={`lg:hidden ${linkStyles}`}
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-200"
             >
               contact
             </Link>
-          </div>
+          </li>
+
+          <Link
+            to="/contact"
+            activeClassName="text-goodBlue"
+            className={`lg:hidden ${linkStyles}`}
+          >
+            contact
+          </Link>
+        </ul>
+
+        <div className="z-30 lg:hidden flex justify-end">
+          <span
+            onClick={() => setMenu(!menu)}
+            className={` lg:hidden  font-black cursor-pointer uppercase text-black text-sm transition-all`}
+          >
+            {menu ? "close" : "menu"}
+          </span>
         </div>
       </div>
 

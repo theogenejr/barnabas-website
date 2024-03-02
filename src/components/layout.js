@@ -6,7 +6,6 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "./Navbar"
 import { Footer } from "./Footer"
@@ -16,7 +15,7 @@ const Layout = ({ children }) => {
     <div className="scroll-smooth font-sofia bg-blue-50">
       <Navbar />
       <div>
-        <main className="min-h-screen pt-16">{children}</main>
+        <main className="py-16">{children}</main>
       </div>
       <Footer />
     </div>

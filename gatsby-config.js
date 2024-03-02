@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Barnabas Samuel - Activist and Musician`,
+    title: `Barnabas Samuel -Community Activist and Musician`,
     description: `A website for Barnabas Samuel - Activist and musician`,
     author: `@theogenejr`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -31,7 +31,9 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url: "http://barnabas.local/graphql",
+        url:
+          // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
+          process.env.WPGRAPHQL_URL || `http://barnabas.local/graphql`,
       },
     },
     {
