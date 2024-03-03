@@ -45,7 +45,7 @@ const Subscription = () => {
   }
 
   return (
-    <div className="mx-4 my-4 min-h-[calc(100vh-140px)] overflow-hidden bg-black/80 shadow-2xl backdrop-blur-lg rounded-3xl py-16 px-8 text-white text-3xl">
+    <div className="mx-4 my-2 min-h-[calc(100vh-140px)] overflow-hidden bg-black/2- shadow-xl backdrop-blur-lg rounded-3xl py-16 px-8 text-gray-900 text-3xl">
       <div className="flex flex-col uppercase ">
         <span className="text-xl font-bold">i have a</span>
         <span className="text-4xl font-black">newsletter</span>
@@ -58,8 +58,8 @@ const Subscription = () => {
         ></motion.div>
       </div>
       <div className="flex flex-col lg:flex-row mt-10 gap-16 lg:items-center">
-        <div className="lg:w-1/2 mb-10">
-          <p className="text-base md:text-base lg:text-sm first-letter:font-bold first-letter:text-6xl snap-start">
+        <div className="lg:w-1/2 mb-4">
+          <p className="text-base md:text-base snap-start">
             I know it sounds crazy, but somehow in a world where social media
             can become overwhelming, I believe that email is a more personal and
             intentional way to connect with my audience. By signing up, you'll
@@ -87,7 +87,7 @@ const Subscription = () => {
               <button
                 type="submit"
                 disabled={messageType === "loading"}
-                className="text-xs font-bold leading-3 transition duration-200 my-2 w-32 h-10 flex items-center justify-center uppercase bg-goodBlue rounded-full hover:bg-black"
+                className="text-xs text-white font-bold leading-3 transition duration-200 my-2 w-32 h-10 flex items-center justify-center uppercase bg-goodBlue rounded-full hover:bg-black"
               >
                 sign up
               </button>

@@ -38,7 +38,7 @@ const WelcomingSection = () => {
   const scale3 = useTransform(scrollYProgress3, [0, 0.5, 1], [0.8, 1, 0.8])
 
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen py-16 mb-8">
       <div className="flex flex-col uppercase mb-24">
         <span className="text-4xl font-black">Madan ILOT</span>
         <span className="text-xl font-bold">(That's Hello in Bari)</span>

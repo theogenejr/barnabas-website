@@ -9,9 +9,29 @@ const linkStyles =
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
 
+  const hamburgerIcon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M3 4H21V6H3V4ZM3 11H15V13H3V11ZM3 18H21V20H3V18Z"></path>
+    </svg>
+  )
+
+  const closeIcon = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      <path d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z"></path>
+    </svg>
+  )
+
   return (
     <header className=" h-16 fixed top-0 left-0 right-0 z-20 transform ease-[cubic-bezier(0.25, 0.25, 0, 1)] duration-300">
-      <div className="flex mx-4 rounded-b-3xl  shadow-md bg-white/95 h-full justify-between px-6 *:w-1/3 lg:px-24 items-center">
+      <div className="flex mx-4 rounded-b-3xl  shadow-md bg-white/95 h-full justify-between px-6 *:w-1/2 lg:px-24 items-center">
         <div className="justify-start flex">
           <Logo />
         </div>
@@ -74,9 +94,9 @@ const Navbar = () => {
         <div className="z-30 lg:hidden flex justify-end">
           <span
             onClick={() => setMenu(!menu)}
-            className={` lg:hidden  font-black cursor-pointer uppercase text-black text-sm transition-all`}
+            className={` lg:hidden  font-black cursor-pointer uppercase text-black w-7 h-7 transition-all`}
           >
-            {menu ? "close" : "menu"}
+            {menu ? closeIcon : hamburgerIcon}
           </span>
         </div>
       </div>

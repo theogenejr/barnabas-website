@@ -1,8 +1,12 @@
 import React from "react"
 
-const SocialMedia = ({ effectColor }) => {
+const SocialMedia = ({ effectColor, originalColor }) => {
   return (
-    <div className="*:text-black gap-3 flex *:h-5 *:w-5 *:cursor-pointer mr-10">
+    <div
+      className={`*:${
+        originalColor ? originalColor : "black"
+      } gap-3 flex *:h-5 *:w-5 *:cursor-pointer mr-10`}
+    >
       <a href="https://facebook.com/BarnabasAfrica">
         <div className={`hover:text-${effectColor} transition duration-200`}>
           <svg
