@@ -12,10 +12,10 @@ const ContactPage = () => (
       <HeroBg />
       <HeroWords />
     </div>
-    <div className=" min-w-screen mx-2 sm:mx-4 border-x-2 border-goodBlue py-8 px-2 sm:px-8 mt-8 sm:mb-10">
+    <div className=" min-w-screen mx-4 border-x-2 border-goodBlue py-8 px-8 mt-8 mb-10">
       <WelcomingSection />
     </div>
-    <div className="mt-24">
+    <div className="">
       <Subscription />
     </div>
   </Layout>

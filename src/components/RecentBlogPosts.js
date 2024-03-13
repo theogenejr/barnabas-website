@@ -22,7 +22,7 @@ const RecentBlogPosts = () => {
   `)
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 w-full">
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10 w-full">
       {/* Render your blog posts here */}
       {data.allWpPost.nodes.map(post => (
         <div
