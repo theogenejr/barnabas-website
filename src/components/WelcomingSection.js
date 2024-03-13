@@ -6,40 +6,9 @@ import { Link } from "gatsby"
 import RecentBlogPosts from "./RecentBlogPosts"
 
 const WelcomingSection = () => {
-  const targetRef1 = useRef(null)
-  const targetRef2 = useRef(null)
-  const targetRef3 = useRef(null)
-
-  const { scrollYProgress: scrollYProgress1 } = useScroll({
-    target: targetRef1,
-    smooth: true,
-    offset: ["start end", "center start"],
-  })
-
-  const { scrollYProgress: scrollYProgress2 } = useScroll({
-    target: targetRef2,
-    smooth: true,
-    offset: ["start end", "center start"],
-  })
-
-  const { scrollYProgress: scrollYProgress3 } = useScroll({
-    target: targetRef3,
-    smooth: true,
-    offset: ["start end", "center start"],
-  })
-
-  const opacity1 = useTransform(scrollYProgress1, [0, 0.5, 1], [0, 1, 0])
-  const scale1 = useTransform(scrollYProgress1, [0, 0.5, 1], [0.8, 1, 0.8])
-
-  const opacity2 = useTransform(scrollYProgress2, [0, 0.5, 1], [0, 1, 0])
-  const scale2 = useTransform(scrollYProgress2, [0, 0.5, 1], [0.8, 1, 0.8])
-
-  const opacity3 = useTransform(scrollYProgress3, [0, 0.5, 1], [0, 1, 0])
-  const scale3 = useTransform(scrollYProgress3, [0, 0.5, 1], [0.8, 1, 0.8])
-
   return (
-    <div className="min-h-screen py-16 mb-8">
-      <div className="flex flex-col uppercase mb-24">
+    <div className="py-2 md:py-16">
+      <div className="flex flex-col uppercase sm:mb-24 mb-8">
         <span className="text-4xl font-black">Madan ILOT</span>
         <span className="text-xl font-bold">(That's Hello in Bari)</span>
         <motion.div
@@ -50,8 +19,15 @@ const WelcomingSection = () => {
           className=" bg-goodBlue"
         ></motion.div>
       </div>
-      <div className="mt-6 flex flex-col gap-16">
+      <div className="mt-6 flex flex-col gap-4 sm:gap-16">
         <motion.div className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  md:h-[80vh] gap-6 items-center ">
+          <div className="md:w-1/2  rounded-2xl overflow-hidden max-h-96">
+            <StaticImage
+              src="../images/img3.jpg"
+              className=" w-full h-full object-cover"
+              alt="descriptive image"
+            />
+          </div>
           <div className="md:w-1/2 mb-10">
             <p className="text-base md:text-base lg:text-lg">
               Welcome! I'm Barnabas Samuel, a musician, community activist, and
@@ -72,18 +48,17 @@ const WelcomingSection = () => {
               </Link>
             </div>
           </div>
+        </motion.div>
+
+        <motion.div className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  md:h-[80vh] gap-6 items-center ">
           <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-96">
             <StaticImage
-              src="../images/img3.jpg"
+              src="../images/bsf-img01.jpg"
               className=" w-full h-full object-cover"
               alt="descriptive image"
             />
           </div>
-        </motion.div>
-
-        <motion.div className="flex flex-col md:flex-row md:even:flex-row-reverse w-full  md:h-[80vh] gap-6 items-center ">
-          {" "}
-          <div className="md:w-1/2 mb-10">
+          <div className="md:w-1/2 ">
             <p className="text-base md:text-base lg:text-lg">
               My foundation empowers individuals to lead fulfilling lives. I
               believe everyone deserves a chance at a healthy, meaningful
@@ -99,17 +74,10 @@ const WelcomingSection = () => {
               </Link>
             </p>
           </div>
-          <div className="md:w-1/2 p-x-4 rounded-2xl overflow-hidden max-h-96">
-            <StaticImage
-              src="../images/bsf-img01.jpg"
-              className=" w-full h-full object-cover"
-              alt="descriptive image"
-            />
-          </div>
         </motion.div>
       </div>
-      <motion.div className="flex mt-24 flex-col w-full  md:h-[80vh] gap-6 items-center ">
-        <div className="md:w-1/2 mb-10">
+      <motion.div className="flex mt-20 flex-col w-full  md:h-[80vh] gap-6 items-center ">
+        <div className="md:w-1/2 mb-4">
           <p className="text-lg font-bold mb-2 lg:text-2xl text-center">
             Read Professional Advice & Personal Stories on my Blog
           </p>
@@ -121,7 +89,7 @@ const WelcomingSection = () => {
         <div className="text-center w-full">
           <RecentBlogPosts />
 
-          <div className="mt-4 underline underline-offset-8 font-semibold capitalize hover:text-goodBlue cursor-pointer">
+          <div className="mt-2 underline underline-offset-8 font-semibold capitalize hover:text-goodBlue cursor-pointer">
             <Link to="/blog">See more blog posts</Link>
           </div>
         </div>

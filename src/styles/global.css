@@ -61,3 +61,22 @@ body {
 .wp-content em {
   margin-bottom: 16px;
 }
+
+.model-scrollbar {
+  ::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 30px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 30px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #044f9f8d;
+    border-radius: 30px;
+  }
+}

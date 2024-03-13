@@ -6,7 +6,14 @@
 
 /**
  * @type {import('gatsby').GatsbyConfig}
+ *
+ *
  */
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Barnabas Samuel - Community Activist and Musician`,
@@ -31,9 +38,8 @@ module.exports = {
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        url:
-          // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
-          process.env.WPGRAPHQL_URL || `http://barnabas.local/graphql`,
+        url: `http://barnabas.local/graphql`,
+        // allows a fallback url if WPGRAPHQL_URL is not set in the env, this may be a local or remote WP instance.
       },
     },
     {
