@@ -45,7 +45,7 @@ const Subscription = () => {
   }
 
   return (
-    <div className="mx-4 my-2 min-h-[calc(100vh-140px)] overflow-hidden bg-black/2- shadow-xl backdrop-blur-lg rounded-3xl py-16 px-8 text-gray-900 text-3xl">
+    <div className="mx-4 my-2 min-h-[calc(100vh-140px)] overflow-hidden  shadow-md backdrop-blur-lg rounded-3xl py-16 px-8 text-gray-900 text-3xl">
       <div className="flex flex-col uppercase ">
         <span className="text-xl font-bold">i have a</span>
         <span className="text-4xl font-black">newsletter</span>

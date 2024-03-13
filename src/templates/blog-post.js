@@ -96,7 +96,7 @@ const SinglePost = ({ data }) => {
         <Comments
           post={wpPost}
           location="single"
-          wordPressUrl="http://barnabas.local"
+          wordPressUrl={process.env.WP_URL || `http://barnabas.local/graphql`}
         />
       </div>
     </Layout>
