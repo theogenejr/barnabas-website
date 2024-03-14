@@ -81,7 +81,7 @@ const Music = () => {
           <div className="w-full h-full bg-black/30 rounded-3xl">
             <StaticImage
               src="../images/music1.png"
-              alt="hero image"
+              alt="barnabas music"
               className=" h-full w-full object-cover rounded-3xl grayscale"
             />
           </div>

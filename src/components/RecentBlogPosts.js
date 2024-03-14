@@ -41,7 +41,7 @@ const RecentBlogPosts = () => {
               )}
             </div>
 
-            <div className="mt-4 text-lg group-hover:text-goodBlue font-semibold">
+            <div className="mt-4 text-sm lg:text-lg group-hover:text-goodBlue font-semibold">
               {post.title}
             </div>
           </Link>

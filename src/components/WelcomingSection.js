@@ -1,6 +1,6 @@
 // import { Link } from "gatsby"
-import React, { useRef } from "react"
-import { motion, useTransform, useScroll } from "framer-motion"
+import React from "react"
+import { motion } from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import RecentBlogPosts from "./RecentBlogPosts"
@@ -76,7 +76,7 @@ const WelcomingSection = () => {
           </div>
         </motion.div>
       </div>
-      <motion.div className="flex mt-20 flex-col w-full  md:h-[80vh] gap-6 items-center ">
+      <motion.div className="flex mt-20 flex-col w-full gap-6 items-center ">
         <div className="md:w-1/2 mb-4">
           <p className="text-lg font-bold mb-2 lg:text-2xl text-center">
             Read Professional Advice & Personal Stories on my Blog
@@ -86,7 +86,7 @@ const WelcomingSection = () => {
             challenges, embracing resilience, and making a positive impact
           </div>
         </div>
-        <div className="text-center w-full">
+        <div className="text-center flex flex-col items-center w-full">
           <RecentBlogPosts />
 
           <div className="mt-2 underline underline-offset-8 font-semibold capitalize hover:text-goodBlue cursor-pointer">
