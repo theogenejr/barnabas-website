@@ -37,24 +37,16 @@ const SinglePost = ({ data }) => {
   const slug = wpPost.slug
   const [comments, setComments] = useState([])
   useEffect(() => {
-    firestore.collection(`comments`).onSnapshot(snapshot => {
-      const posts = snapshot.docs
-        .filter(doc => doc.data().slug === slug)
-        .map(doc => {
-          return { id: doc.id, ...doc.data() }
-        })
-      setComments(posts)
-    })
-    const cleanUp = firestore
-      .doc(`comments/${slug}`)
-      .collection("comments")
+    const unsubscribe = firestore
+      .collection(`comments`)
+      .where("slug", "==", slug)
       .onSnapshot(snapshot => {
         const posts = snapshot.docs.map(doc => {
           return { id: doc.id, ...doc.data() }
         })
         setComments(posts)
       })
-    return () => cleanUp()
+    return () => unsubscribe()
   }, [slug])
 
   // End of firebase comments

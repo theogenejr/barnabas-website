@@ -34,7 +34,7 @@ const BlogPage = () => {
           </div>
         </div>
         <div className="my-2 flex justify-center mt-12 font-semibold rounded-2xl">
-          <p className="p-4 w-2/3 text-xl font-light">
+          <p className="p-4 md:w-2/3 text-xl font-light">
             Welcome to my blog, where I share my insights on life, mindset,
             productivity, survival, and more. Here, you can find inspiration and
             practical tips to help you navigate life's challenges and find your

@@ -31,12 +31,12 @@ const BlogPostCard = ({ title, date, excerpt, featuredImage, uri }) => {
           <span className="">3 Min Read</span>
         </div>
         <Link to={`/blog${uri}`} as={GatsbyImage}>
-          <div className="text-[#141414] cursor-pointer text-3xl font-bold">
+          <div className="text-[#141414] cursor-pointer text-xl sm:text-3xl font-bold">
             {title}
           </div>
         </Link>
         <div
-          className="text-[#6b7280] text-xl mt-2 text-ellipsis overflow-hidden"
+          className="text-[#6b7280] text-base sm:text-xl mt-2 text-ellipsis overflow-hidden"
           dangerouslySetInnerHTML={{ __html: excerpt }}
         />
         <Link to={`/blog${uri}`} as={GatsbyImage}>
