@@ -4,9 +4,11 @@ import { motion, useScroll, useSpring } from "framer-motion"
 import { useLocation } from "@reach/router"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import ShareButtons from "../components/SocialShare"
-import Comments from "../components/Comments"
+import Comments from "../components/firebaseCommenting/Comments"
+import { useState } from "react"
+// import Comments from "../components/Comments"
 
 const SinglePost = ({ data }) => {
   const { scrollYProgress } = useScroll()
@@ -28,6 +30,16 @@ const SinglePost = ({ data }) => {
 
     return `${weekday}, ${month} ${day}, ${year}`
   }
+
+  const sluggy = wpPost.slug.substring(1, wpPost.slug.length - 1)
+  const [comments, setComments] = useState([
+    {
+      name: "Elon",
+      content: "Hello, I also went there.",
+      pId: null,
+      time: null,
+    },
+  ])
 
   const URL_BASE = "http://localhost:8000"
   return (
@@ -56,7 +68,7 @@ const SinglePost = ({ data }) => {
 
         <div className="flex justify-center sm:ml-10 md:w-[80%] lg:w-[60%]">
           <motion.div
-            className="fixed top-16 left-9 right-9 h-[2px] z-20 origin-left bg-goodBlue "
+            className="fixed top-16 left-0 right-0 h-[2px] z-20 origin-left bg-goodBlue "
             style={{ scaleX }}
           />
           <div className="">
@@ -93,11 +105,12 @@ const SinglePost = ({ data }) => {
         <div className="otherPosts"></div>
       </div>
       <div className="px-4">
-        <Comments
+        <Comments slug={sluggy} comments={comments} />
+        {/* <Comments
           post={wpPost}
           location="single"
           wordPressUrl={process.env.WP_URL || `http://barnabas.local/graphql`}
-        />
+        /> */}
       </div>
     </Layout>
   )
@@ -111,6 +124,7 @@ export const query = graphql`
       __typename
       id
       uri
+      slug
       title
       date
       content

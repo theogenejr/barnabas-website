@@ -49,7 +49,7 @@ export const Footer = () => {
   }
 
   return (
-    <div className="  text-white rounded-t-3xl  bg-goodBlue py-10 md:py-16  ">
+    <div className="  text-white  bg-goodBlue py-10 md:py-16  ">
       <div className="flex justify-stretch px-4 items-center lg:items-start md:gap-20 sm:px-20 gap-10 flex-col lg:flex-row w-full">
         <div className="flex flex-col items-center">
           <p className="uppercase text-xl font-bold mb-4">

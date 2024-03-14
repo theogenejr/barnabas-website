@@ -30,8 +30,8 @@ const Navbar = () => {
   )
 
   return (
-    <header className=" h-16 fixed top-0 left-0 right-0 z-30 transform ease-[cubic-bezier(0.25, 0.25, 0, 1)] duration-300">
-      <div className="flex mx-4 rounded-b-3xl  shadow-md bg-white/95 h-full justify-between px-6 *:w-1/2 lg:px-24 items-center">
+    <header className=" h-16 fixed border-b-[1px] border-b-black/20 top-0 bg-white/95 left-0 right-0 z-30 transform ease-[cubic-bezier(0.25, 0.25, 0, 1)] duration-300">
+      <div className="flex mx-4 h-full justify-between px-6 *:w-1/2 lg:px-24 items-center">
         <div className="justify-start flex">
           <Logo />
         </div>
