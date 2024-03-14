@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import PropTypes from "prop-types"
+import { firestore } from "../../../firebase.js"
 
 const CommentForm = ({ parentId, slug }) => {
   const [name, setName] = useState("")
@@ -9,13 +10,19 @@ const CommentForm = ({ parentId, slug }) => {
     e.preventDefault()
     let comment = {
       name: name,
+      slug: slug,
       content: content,
       pId: parentId || null,
       time: new Date(),
     }
     setName("")
     setContent("")
-    console.log(comment)
+    firestore
+      .collection(`comments`)
+      .add(comment)
+      .catch(err => {
+        console.error("error adding comment: ", err)
+      })
   }
 
   return (

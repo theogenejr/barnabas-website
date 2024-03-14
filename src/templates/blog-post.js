@@ -8,6 +8,8 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import ShareButtons from "../components/SocialShare"
 import Comments from "../components/firebaseCommenting/Comments"
 import { useState } from "react"
+import { firestore } from "../../firebase"
+import { useEffect } from "react"
 // import Comments from "../components/Comments"
 
 const SinglePost = ({ data }) => {
@@ -31,15 +33,31 @@ const SinglePost = ({ data }) => {
     return `${weekday}, ${month} ${day}, ${year}`
   }
 
-  const sluggy = wpPost.slug.substring(1, wpPost.slug.length - 1)
-  const [comments, setComments] = useState([
-    {
-      name: "Elon",
-      content: "Hello, I also went there.",
-      pId: null,
-      time: null,
-    },
-  ])
+  // Firebase Comments
+  const slug = wpPost.slug
+  const [comments, setComments] = useState([])
+  useEffect(() => {
+    firestore.collection(`comments`).onSnapshot(snapshot => {
+      const posts = snapshot.docs
+        .filter(doc => doc.data().slug === slug)
+        .map(doc => {
+          return { id: doc.id, ...doc.data() }
+        })
+      setComments(posts)
+    })
+    const cleanUp = firestore
+      .doc(`comments/${slug}`)
+      .collection("comments")
+      .onSnapshot(snapshot => {
+        const posts = snapshot.docs.map(doc => {
+          return { id: doc.id, ...doc.data() }
+        })
+        setComments(posts)
+      })
+    return () => cleanUp()
+  }, [slug])
+
+  // End of firebase comments
 
   const URL_BASE = "http://localhost:8000"
   return (
@@ -105,7 +123,7 @@ const SinglePost = ({ data }) => {
         <div className="otherPosts"></div>
       </div>
       <div className="px-4">
-        <Comments slug={sluggy} comments={comments} />
+        <Comments slug={slug} comments={comments} />
         {/* <Comments
           post={wpPost}
           location="single"
