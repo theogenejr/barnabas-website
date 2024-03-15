@@ -29,8 +29,10 @@ const CommentForm = ({ parentId, slug }) => {
   }
 
   return (
-    <div className="my-16 lg:w-1/2 md:w-2/3 md:ml-16">
-      <h2 className="mb-4 font-semibold text-2xl">Add a comment</h2>
+    <div className="my-16 ">
+      <h2 className="mb-4 font-semibold text-2xl text-goodBlue">
+        Add a comment
+      </h2>
       <form onSubmit={handleCommentSubmission}>
         <div className="mb-3">
           <label className="block mb-2">Name*</label>

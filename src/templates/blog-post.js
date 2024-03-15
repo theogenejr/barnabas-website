@@ -85,7 +85,7 @@ const SinglePost = ({ data }) => {
             <div className="flex flex-wrap items-center gap-4 text-lg text-[#6b7280]">
               <span>{formatDate(wpPost.date)} </span>
               <span className="w-2 h-2 bg-[#6b7280] rounded-full"></span>
-              <span>5 min Read</span>
+              <span>{wpPost.moreBlogPostFields.readTime} min Read</span>
             </div>
 
             <div className="sm:text-5xl text-3xl font-bold mt-4 text-[#2f1c6a]">
@@ -109,18 +109,18 @@ const SinglePost = ({ data }) => {
               className="wp-content text-[#36344d] mt-8 text-xl font-light"
               dangerouslySetInnerHTML={{ __html: wpPost.content }}
             />
-          </div>
-        </div>
-
-        <div className="otherPosts"></div>
-      </div>
-      <div className="px-4">
-        <Comments slug={slug} comments={comments} />
-        {/* <Comments
+            <div className="px-4">
+              <Comments slug={slug} comments={comments} />
+              {/* <Comments
           post={wpPost}
           location="single"
           wordPressUrl={process.env.WP_URL || `http://barnabas.local/graphql`}
         /> */}
+            </div>
+          </div>
+        </div>
+
+        <div className="otherPosts"></div>
       </div>
     </Layout>
   )
@@ -134,6 +134,9 @@ export const query = graphql`
       __typename
       id
       uri
+      moreBlogPostFields {
+        readTime
+      }
       slug
       title
       date

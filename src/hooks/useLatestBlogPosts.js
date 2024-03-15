@@ -8,6 +8,10 @@ export const useLatestBlogPosts = () => {
           id
           title
           excerpt
+          moreBlogPostFields {
+            readTime
+          }
+          slug
           uri
           date
           featuredImage {

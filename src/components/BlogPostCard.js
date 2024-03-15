@@ -3,7 +3,14 @@ import { motion } from "framer-motion"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-const BlogPostCard = ({ title, date, excerpt, featuredImage, uri }) => {
+const BlogPostCard = ({
+  title,
+  date,
+  excerpt,
+  featuredImage,
+  uri,
+  readTime,
+}) => {
   const formatDate = dateString => {
     const dateObj = new Date(dateString)
     const weekday = dateObj.toLocaleDateString("en-US", { weekday: "long" })
@@ -28,7 +35,7 @@ const BlogPostCard = ({ title, date, excerpt, featuredImage, uri }) => {
         <div className="text-[#6b7280] flex flex-wrap mb-6 text-lg gap-4 items-center">
           <span className="">{formatDate(date)}</span>
           <div className="w-[2px] h-[2px] rounded-full bg-[#6b7280]"></div>
-          <span className="">3 Min Read</span>
+          <span className="">{readTime} Min Read</span>
         </div>
         <Link to={`/blog${uri}`} as={GatsbyImage}>
           <div className="text-[#141414] cursor-pointer text-xl sm:text-3xl font-bold">

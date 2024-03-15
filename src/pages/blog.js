@@ -50,6 +50,7 @@ const BlogPage = () => {
               excerpt={post.excerpt}
               featuredImage={post.featuredImage.node}
               uri={post.uri}
+              readTime={post.moreBlogPostFields.readTime}
             />
           ))}
         </div>

@@ -4,10 +4,9 @@ import Comment from "./Comment"
 import CommentForm from "./CommentForm"
 
 const Comments = ({ comments, slug }) => {
-  const sortedComments = comments.sort((a, b) => b.time - a.time)
   return (
     <div>
-      <div className="py-16 border-y-[1px] border-y-grey mb-4">
+      <div className="py-8 border-y-[1px] border-y-grey my-16">
         <h2 className="text-2xl">
           <span className="mr-2">Comments</span>
           <span className="text-3xl">
@@ -20,8 +19,7 @@ const Comments = ({ comments, slug }) => {
         </h2>
       </div>
 
-      <CommentForm slug={slug} />
-      <div className="lg:w-1/2 md:w-2/3 md:ml-16">
+      <div className="">
         {comments.length > 0 &&
           comments
             .filter(comment => !comment.pId)
@@ -29,6 +27,8 @@ const Comments = ({ comments, slug }) => {
               return <Comment key={comment.id} comment={comment} slug={slug} />
             })}
       </div>
+
+      <CommentForm slug={slug} />
     </div>
   )
 }
