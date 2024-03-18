@@ -63,7 +63,7 @@ export const Footer = () => {
             <li className="">
               <Link
                 to="/blog"
-                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-200"
+                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-500"
               >
                 Blog
               </Link>
@@ -71,7 +71,7 @@ export const Footer = () => {
             <li className="">
               <Link
                 to="/music"
-                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-200"
+                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-500"
               >
                 music
               </Link>
@@ -79,7 +79,7 @@ export const Footer = () => {
             <li className="">
               <Link
                 to="/about"
-                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-200"
+                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-500"
               >
                 About
               </Link>
@@ -87,7 +87,7 @@ export const Footer = () => {
             <li className="">
               <Link
                 to="/shop"
-                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-200"
+                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-500"
               >
                 Shop
               </Link>
@@ -95,7 +95,7 @@ export const Footer = () => {
             <li>
               <Link
                 to="/contact"
-                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-200"
+                className="text-xl font-semiBold capitalize cursor-pointer  hover:text-black transition duration-500"
               >
                 contact
               </Link>
@@ -129,7 +129,7 @@ export const Footer = () => {
                 <button
                   type="submit"
                   disabled={messageType === "loading"}
-                  className="text-xs leading-3 transition duration-200 mb-2 min-w-16 max-w-16 h-16 flex items-center justify-center uppercase bg-black rounded-full hover:bg-white hover:text-black"
+                  className="text-xs leading-3 transition duration-500 mb-2 min-w-16 max-w-16 h-16 flex items-center justify-center uppercase bg-black rounded-full hover:bg-white hover:text-black"
                 >
                   sign up
                 </button>
@@ -185,19 +185,19 @@ export const Footer = () => {
           <div className="w-1/4 h-[1px] bg-white"></div>
           <div className="w-1/2 place-items-center grid grid-cols-1 md:grid-cols-3 space-y-2 md:gap-0  md:divide-x">
             <div
-              className="flex items-center justify-center cursor-pointer hover:text-black w-full"
+              className="flex items-center justify-center cursor-pointer hover:text-black w-full transition duration-500"
               onClick={() => setTermsModalOpen(true)}
             >
               Terms of Service
             </div>
             <div
-              className="flex items-center justify-center cursor-pointer hover:text-black w-full"
+              className="flex items-center justify-center cursor-pointer hover:text-black w-full transition duration-500"
               onClick={() => setReturnModalOpen(true)}
             >
               Return Policy
             </div>
             <div
-              className="flex items-center justify-center cursor-pointer hover:text-black w-full"
+              className="flex items-center justify-center cursor-pointer hover:text-black w-full transition duration-500"
               onClick={() => setPrivacyModalOpen(true)}
             >
               Privacy Policy

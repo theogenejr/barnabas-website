@@ -41,7 +41,7 @@ const Navbar = () => {
             <Link
               to="/about"
               activeClassName="text-goodBlue"
-              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-200"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-500"
             >
               About
             </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
           <li className="">
             <a
               href=" https://www.bonfire.com/store/barnabas-samuel/"
-              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-200"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-500"
             >
               Shop
             </a>
@@ -58,7 +58,7 @@ const Navbar = () => {
             <Link
               to="/blog"
               activeClassName="text-goodBlue"
-              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-200"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-500"
             >
               Blog
             </Link>
@@ -67,7 +67,7 @@ const Navbar = () => {
             <Link
               to="/music"
               activeClassName="text-goodBlue"
-              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-200"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-500"
             >
               music
             </Link>
@@ -76,7 +76,7 @@ const Navbar = () => {
             <Link
               to="/contact"
               activeClassName="text-goodBlue"
-              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-200"
+              className="text-sm font-black uppercase cursor-pointer text-black hover:text-goodBlue transition duration-500"
             >
               contact
             </Link>

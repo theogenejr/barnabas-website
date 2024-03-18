@@ -27,7 +27,6 @@ function Paragrapgh({ children }) {
 
 const About = () => {
   const aboutPar = useRef()
-  console.log(aboutPar.current)
   return (
     <Layout>
       <div className=" px-4">
@@ -53,7 +52,7 @@ const About = () => {
         </div>
 
         <div
-          className="flex lg:mx-64 md:mx-32 sm:mx-20 flex-col gap-8 lg:text-xl md:text-lg mt-12 font-semibold text-slate-700"
+          className="flex lg:mx-64 md:mx-32 sm:mx-20 flex-col gap-8 lg:text-xl md:text-lg mt-12 font-normal text-slate-700"
           ref={aboutPar}
         >
           <Paragrapgh>
@@ -143,7 +142,7 @@ const About = () => {
         <div className="text-lg sm:text-3xl font-bold ">
           <div className="flex flex-col">
             <h2 className=" font-bold text-4xl sm:text-6xl flex flex-col">
-              Get in touch{" "}
+              Get in touch
               <motion.div
                 initial={{ height: 16, width: 0 }}
                 animate={{ height: 16, width: 100 }}
@@ -151,7 +150,7 @@ const About = () => {
                 className=" bg-goodBlue"
               ></motion.div>
             </h2>
-            <p className="text-base mt-4 text-center">
+            <p className="text-base mt-4 font-normal">
               Have a question or want to chat? Feel free to drop me a line via
               the form below
             </p>
@@ -167,7 +166,7 @@ const About = () => {
             ></motion.div>
           </div>
         </div>
-        <div className="mt-4 bg-goodBlue/30 w-full md:w-2/3 sm:p-10 p-2 py-8 rounded-3xl hover:shadow-md">
+        <div className="mt-4 bg-goodBlue/10 backdrop-blur-md transition duration-500 w-full md:w-2/3 sm:p-10 p-2 py-8 rounded-3xl">
           <ContactForm />
         </div>
       </div>

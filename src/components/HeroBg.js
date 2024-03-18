@@ -1,14 +1,10 @@
-import React, { useState } from "react"
-import { motion } from "framer-motion"
+import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 const HeroBg = () => {
   return (
-    <motion.div
-      initial={{ height: 0, borderRadius: 0 }}
-      animate={{ height: "100%", borderRadius: "1.5rem" }}
-      transition={{ duration: 1 }}
-      className={`absolute top-0 right-0 overflow-hidden 
+    <div
+      className={`h-full rounded-3xl absolute top-0 right-0 overflow-hidden 
         `}
     >
       <StaticImage
@@ -16,7 +12,7 @@ const HeroBg = () => {
         alt="hero image"
         className=" h-full w-full object-cover"
       />
-    </motion.div>
+    </div>
   )
 }
 

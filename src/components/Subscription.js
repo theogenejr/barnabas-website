@@ -45,7 +45,7 @@ const Subscription = () => {
   }
 
   return (
-    <div className="mx-4 my-2 min-h-[calc(100vh-140px)] overflow-hidden  shadow-md backdrop-blur-lg rounded-3xl py-16 px-8 text-gray-900 text-3xl">
+    <div className="mx-4 my-2 min-h-[calc(100vh-140px)] overflow-hidden border-black/10 border-[1px] backdrop-blur-lg rounded-3xl py-16 px-8 text-gray-900 text-3xl">
       <div className="flex flex-col uppercase ">
         <span className="text-xl font-bold">i have a</span>
         <span className="text-4xl font-black">newsletter</span>
@@ -59,7 +59,7 @@ const Subscription = () => {
       </div>
       <div className="flex flex-col lg:flex-row mt-10 gap-16 lg:items-center">
         <div className="lg:w-1/2 mb-4">
-          <p className="text-base md:text-base snap-start">
+          <p className="text-sm md:text-base snap-start">
             I know it sounds crazy, but somehow in a world where social media
             can become overwhelming, I believe that email is a more personal and
             intentional way to connect with my audience. By signing up, you'll

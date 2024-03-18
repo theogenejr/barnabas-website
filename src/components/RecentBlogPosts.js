@@ -27,16 +27,16 @@ const RecentBlogPosts = () => {
       {data.allWpPost.nodes.map(post => (
         <div
           key={post.id}
-          className="cursor-pointer group hover:bg-gray-200/40 hover:shadow-md transition duration-200 p-4 rounded-2xl"
+          className="cursor-pointer group  border-black/10 border-[1px] hover:-translate-y-1 transition duration-500 p-4 rounded-3xl"
         >
           <Link to={`/blog${post.uri}`}>
-            <div className="h-52">
+            <div className="h-52 overflow-hidden rounded-[12px]">
               {post.featuredImage && (
                 <GatsbyImage
                   image={post.featuredImage.node}
                   src={post.featuredImage.node.sourceUrl}
                   alt={post.title}
-                  className="h-full object-cover rounded-2xl"
+                  className="h-full transition duration-500 group-hover:scale-105 object-cover rounded-[12px]"
                 />
               )}
             </div>

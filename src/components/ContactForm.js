@@ -136,7 +136,7 @@ const ContactForm = () => {
       <button
         className={`bg-goodBlue ${
           messageType === "loading" ? "hover:bg-goodBlue hover:text-white" : ""
-        } rounded-full px-9 py-2 transition-all text-white mt-10 mb-2 uppercase text-base font-extrabold hover:bg-black min-w-48 hover:text-blue-400`}
+        } rounded-full px-9 py-2 transition duration-500 text-white mt-10 mb-2 uppercase text-base font-extrabold hover:bg-black min-w-48 hover:text-blue-400`}
         type="submit"
         disabled={messageType === "loading"}
       >

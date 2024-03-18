@@ -8,7 +8,7 @@ const SocialMedia = ({ effectColor, originalColor }) => {
       } gap-3 flex *:h-5 *:w-5 *:cursor-pointer mr-10`}
     >
       <a href="https://facebook.com/BarnabasAfrica">
-        <div className={`hover:text-${effectColor} transition duration-200`}>
+        <div className={`hover:text-${effectColor} transition duration-500`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -19,7 +19,7 @@ const SocialMedia = ({ effectColor, originalColor }) => {
         </div>
       </a>
       <a href="https://x.com/BarnabasAfrica">
-        <div className={`hover:text-${effectColor} transition duration-200`}>
+        <div className={`hover:text-${effectColor} transition duration-500`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -30,7 +30,7 @@ const SocialMedia = ({ effectColor, originalColor }) => {
         </div>
       </a>
       <a href=" https://www.linkedin.com/in/barnabasafrica/">
-        <div className={`hover:text-${effectColor} transition duration-200`}>
+        <div className={`hover:text-${effectColor} transition duration-500`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -41,7 +41,7 @@ const SocialMedia = ({ effectColor, originalColor }) => {
         </div>
       </a>
       <a href="https://www.instagram.com/barnabasafrica">
-        <div className={`hover:text-${effectColor} transition duration-200`}>
+        <div className={`hover:text-${effectColor} transition duration-500`}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
