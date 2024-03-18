@@ -22,7 +22,7 @@ const BlogPostCard = ({
   }
 
   return (
-    <div className="w-full border-2 border-blue-800 rounded-3xl shadow-md">
+    <div className="w-full hover:-translate-y-1 border-[1px] transition duration-500 group/wrapper border-blue-800 rounded-3xl shadow-md shadow-goodBlue/10">
       <div className=" border-b-2 rounded-t-3xl overflow-hidden h-56 sm:h-96 border-blue-800 border-dotted">
         <GatsbyImage
           image={featuredImage}
@@ -46,12 +46,24 @@ const BlogPostCard = ({
           className="text-[#6b7280] text-base sm:text-xl mt-2 text-ellipsis overflow-hidden"
           dangerouslySetInnerHTML={{ __html: excerpt }}
         />
-        <Link to={`/blog${uri}`} as={GatsbyImage}>
-          <div className=" my-6 group text-blue-500 transition-all duration-300 ease-in-out w-fit">
-            <div className="bg-left-bottom bg-gradient-to-r from-blue-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out capitalize cursor-pointer font-bold text-lg">
-              read more
-            </div>
+        <Link
+          to={`/blog${uri}`}
+          as={GatsbyImage}
+          className="w-fit flex items-center gap-4 mt-10 group"
+        >
+          <div className="rounded-full bg-goodBlue/50 group-hover:bg-goodBlue transition duration-500 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              className="w-10 h-10 p-2 text-white"
+            >
+              <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+            </svg>
           </div>
+          <span className=" capitalize group-hover:text-goodBlue transition duration-500 font-bold text-lg">
+            Read More
+          </span>
         </Link>
       </div>
     </div>

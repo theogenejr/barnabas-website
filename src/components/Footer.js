@@ -4,6 +4,7 @@ import React, { useRef, useState } from "react"
 import SocialMedia from "./SocialMedia"
 import { StaticImage } from "gatsby-plugin-image"
 import Modal from "./Modal"
+import { motion } from "framer-motion"
 
 export const Footer = () => {
   const [isTermsModalOpen, setTermsModalOpen] = useState(false)
@@ -50,7 +51,13 @@ export const Footer = () => {
 
   return (
     <div className="  text-white  bg-goodBlue py-10 md:py-16  ">
-      <div className="flex justify-stretch px-4 items-center lg:items-start md:gap-20 sm:px-20 gap-10 flex-col lg:flex-row w-full">
+      <motion.div
+        initial={{ translateY: 150, opacity: 0 }}
+        whileInView={{ translateY: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="flex justify-stretch px-4 items-center lg:items-start md:gap-20 sm:px-20 gap-10 flex-col lg:flex-row w-full"
+      >
         <div className="flex flex-col items-center">
           <p className="uppercase text-xl font-bold mb-4">
             I'm on social media
@@ -175,7 +182,7 @@ export const Footer = () => {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <div className="mt-28">
         <div className="text-center mb-8">

@@ -8,7 +8,7 @@ import Subscription from "../components/Subscription"
 
 const ContactPage = () => (
   <Layout>
-    <div className="flex items-center justify-between my-2 mx-4 h-[calc(100vh-100px)] relative">
+    <div className="flex items-center justify-between my-2 mx-4 h-[calc(100vh-80px)] relative">
       <HeroBg />
       <HeroWords />
     </div>

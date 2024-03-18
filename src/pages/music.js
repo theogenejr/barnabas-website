@@ -155,14 +155,8 @@ const Music = () => {
                     className="w-2/3"
                   />
                 </div>
-                <div
-                  className="flex flex-col mt-4 cursor-pointer"
-                  onClick={() => setModalOpen(true)}
-                >
-                  <span
-                    className="text-2xl uppercase font-bold  "
-                    onClick={() => setModalOpen(true)}
-                  >
+                <div className="flex flex-col mt-4">
+                  <span className="text-2xl uppercase font-bold  ">
                     Sambara
                   </span>
                   <span
@@ -488,14 +482,14 @@ const Music = () => {
         <div className="w-full flex flex-col items-center my-4">
           <div className="w-[2px] h-40 bg-blue-700 items"></div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10">
           <div className="flex flex-col uppercase ">
-            <span className="text-2xl font-semiBold">
+            <span className="text-2xl font-extrabold">
               get to know more about Barnabas Samuel
             </span>
             <motion.div
               initial={{ height: 16, width: 0 }}
-              whileInView={{ height: 16, width: 200 }}
+              whileInView={{ height: 16, width: 100 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
               className=" bg-goodBlue"

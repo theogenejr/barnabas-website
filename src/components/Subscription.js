@@ -2,8 +2,6 @@ import React, { useRef, useState } from "react"
 import { motion } from "framer-motion"
 
 import emailjs from "@emailjs/browser"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 const Subscription = () => {
   const TEMPLATE_ID = "template_es8k9cw"
@@ -45,7 +43,13 @@ const Subscription = () => {
   }
 
   return (
-    <div className="mx-4 my-2 min-h-[calc(100vh-140px)] overflow-hidden border-black/10 border-[1px] backdrop-blur-lg rounded-3xl py-16 px-8 text-gray-900 text-3xl">
+    <motion.div
+      initial={{ translateY: 150, opacity: 0 }}
+      whileInView={{ translateY: 0, opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.1 }}
+      viewport={{ once: true }}
+      className="mx-4 my-2 min-h-[calc(100vh-140px)] overflow-hidden border-black/10 border-[1px] backdrop-blur-lg rounded-3xl py-16 px-8 text-gray-900 text-3xl"
+    >
       <div className="flex flex-col uppercase ">
         <span className="text-xl font-bold">i have a</span>
         <span className="text-4xl font-black">newsletter</span>
@@ -128,7 +132,7 @@ const Subscription = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

@@ -71,7 +71,7 @@ const CommentForm = ({ parentId, slug }) => {
         </div>
         <button
           type="submit"
-          className="bg-goodBlue hover:bg-sky-700 rounded-full px-4 uppercase font-bold text-white py-2.5 mt-8 cursor-pointer"
+          className="bg-goodBlue hover:bg-sky-700 rounded-full px-4 uppercase font-bold text-white transition duration-500 py-2.5 mt-8 cursor-pointer"
         >
           Submit Comment
         </button>

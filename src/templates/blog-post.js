@@ -57,7 +57,7 @@ const SinglePost = ({ data }) => {
       <Seo title={wpPost.title} description={wpPost.excerpt} />
       <div className="w-full md:items-start md:justify-between flex-col md:flex-row gap-4 flex relative px-4 py-8 md:py-16">
         <div
-          className=" flex gap-2 items-center group pl-2 hover: hover:text-gray-500 uppercase cursor-pointer font-semibold text-base"
+          className=" flex gap-2 items-center group pl-2 transition duration-500 hover:text-gray-500 uppercase cursor-pointer font-semibold text-base"
           onClick={() => navigate(-1)}
         >
           <div className=" w-5 ">
