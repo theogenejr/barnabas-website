@@ -1,6 +1,4 @@
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { motion } from "framer-motion"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"

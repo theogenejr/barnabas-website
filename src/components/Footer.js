@@ -121,7 +121,7 @@ export const Footer = () => {
             <StaticImage
               src="../images/BSF LOGO-Black.png"
               alt="bsf-logo"
-              className="w-28 translate-y-2"
+              className="w-28 -translate-y-4"
             />
           </a>
         </div>
@@ -194,7 +194,7 @@ export const Footer = () => {
 
       <div className="mt-28">
         <div className="text-center mb-8">
-          © 2024 Barnabas Samuel - All rights reserved
+          © {new Date().getFullYear()} Barnabas Samuel - All rights reserved
         </div>
         <div className="flex  justify-between items-center w-full ">
           <div className="w-1/4 h-[1px] bg-white"></div>

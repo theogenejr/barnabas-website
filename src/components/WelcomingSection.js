@@ -7,7 +7,7 @@ import RecentBlogPosts from "./RecentBlogPosts"
 
 const WelcomingSection = () => {
   return (
-    <div className="py-2 md:py-16">
+    <div className="py-2 md:py-8">
       <div className="flex flex-col uppercase sm:mb-24 mb-8">
         <span className="text-4xl font-black">Madan ILOT</span>
         <span className="text-xl font-bold">(That's Hello in Bari)</span>
@@ -101,7 +101,11 @@ const WelcomingSection = () => {
             </p>
 
             <div className="mt-8">
-              <Link to="/about" className="flex items-center w-fit gap-4 group">
+              <a
+                href="https://bsf.barnabas.one/"
+                target="_blank"
+                className="flex items-center w-fit gap-4 group"
+              >
                 <div className="rounded-full bg-goodBlue/50 group-hover:bg-goodBlue transition duration-500 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +119,7 @@ const WelcomingSection = () => {
                 <span className=" capitalize group-hover:text-goodBlue transition duration-500 font-bold text-lg">
                   Learn More about the Barnabas Samuel Foundation
                 </span>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </motion.div>
@@ -139,8 +143,22 @@ const WelcomingSection = () => {
         <div className="text-center flex flex-col items-center w-full">
           <RecentBlogPosts />
 
-          <div className="mt-2 underline underline-offset-8 font-semibold capitalize hover:text-goodBlue transition duration-500 cursor-pointer">
-            <Link to="/blog">See more blog posts</Link>
+          <div className="mt-4">
+            <Link to="/blog" className="flex items-center w-fit gap-4 group">
+              <div className="rounded-full bg-goodBlue/50 group-hover:bg-goodBlue transition duration-500 flex items-center justify-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-10 h-10 p-2 text-white"
+                >
+                  <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                </svg>
+              </div>
+              <span className=" capitalize group-hover:text-goodBlue transition duration-500 font-bold text-lg">
+                See more of my stories
+              </span>
+            </Link>
           </div>
         </div>
       </motion.div>
