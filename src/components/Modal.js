@@ -12,7 +12,7 @@ function Modal({ children, onClose }) {
   )
 
   return (
-    <div className="model-scrollbar fixed flex items-center pt-12 pb-8 rounded-3xl justify-center top-[70px] left-4 right-4 bottom-2 bg-white/90 backdrop-blur-md z-50">
+    <div className="model-scrollbar fixed flex items-center pt-12 pb-8 rounded-3xl justify-center top-[70px] left-4 right-4 bottom-2 bg-white z-50">
       <div className="w-full h-full box-border px-4 overflow-y-scroll">
         {children}
         <button

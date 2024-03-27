@@ -78,7 +78,7 @@ const SinglePost = ({ data }) => {
 
         <div className="flex justify-center sm:ml-10 md:w-[80%] lg:w-[60%]">
           <motion.div
-            className="fixed top-16 left-0 right-0 h-[2px] z-20 origin-left bg-goodBlue "
+            className="fixed top-16 left-0 right-0 h-2 z-20 origin-left bg-goodBlue "
             style={{ scaleX }}
           />
           <div className="">

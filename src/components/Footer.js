@@ -110,12 +110,20 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col w-1/2 md:w-1/6 items-center justify-center">
-          <StaticImage
-            src="../images/logo-white-lg.png"
-            alt="bs-logo"
-            className="-translate-x-4"
-          />
-          <StaticImage src="../images/BSF LOGO-Black.png" alt="bsf-logo" />
+          <Link to="/">
+            <StaticImage
+              src="../images/logo-white-lg.png"
+              alt="bs-logo"
+              className="-translate-x-4 w-56"
+            />
+          </Link>
+          <a href="https://bsf.barnabas.one" target="_blank">
+            <StaticImage
+              src="../images/BSF LOGO-Black.png"
+              alt="bsf-logo"
+              className="w-28 translate-y-2"
+            />
+          </a>
         </div>
         <div className="w-full gap-2 text-2xl font-bold flex flex-col  lg:w-1/3 ">
           <p>Recieve my newsletter</p>

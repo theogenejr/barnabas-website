@@ -41,10 +41,7 @@ const About = () => {
           <div className="absolute w-full h-full bg-black/50 top-0 left-0 flex items-start pt-48 sm:pt-32 sm:pl-24 pl-6">
             <div className="flex relative flex-col">
               <span className="uppercase text-white text-6xl sm:text-8xl lg:text-9xl font-black z-20">
-                about /
-              </span>
-              <span className="uppercase text-white text-6xl sm:text-8xl lg:text-9xl font-black z-20">
-                bio
+                /bio
               </span>
               <div className="bg-blue-800/50 sm:w-52 w-32 h-32  sm:h-52 md:w-72 md:h-72 absolute right-1/2 left-1/2 -top-10 sm:-right-36 md:-right-56 lg:-right-52 rounded-full z-10 sm:-top-14 md:-top-24 lg:-top-20"></div>
             </div>

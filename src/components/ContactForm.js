@@ -19,9 +19,6 @@ const ContactForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    // Access the form data with the checkbox value
-    const formData = new FormData(e.target)
-    const submittedValue = formData.get("newsletter")
 
     // Set isSending to true only if both isError and isSuccess are false
     setMessageType("loading")
@@ -46,6 +43,7 @@ const ContactForm = () => {
   }
   return (
     <form ref={form} onSubmit={handleSubmit} className="w-full">
+      <input type="hidden" name="source" value="Barnabas.one" />
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4 sm:gap-8 md:flex-row">
           <div className="w-full relative bg-white rounded-full px-8 py-2 flex items-center group">

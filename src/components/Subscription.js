@@ -21,12 +21,17 @@ const Subscription = () => {
   const handleSubmit = e => {
     e.preventDefault()
 
+    let modifiedForm = {
+      ...form.current,
+      source: "Barnabas.one",
+    }
+
     setMessageType("loading")
 
     // Send the email using emailjs
     privacyAccepted
       ? emailjs
-          .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, {
+          .sendForm(SERVICE_ID, TEMPLATE_ID, modifiedForm, {
             publicKey: PUBLIC_KEY,
           })
           .then(
@@ -80,6 +85,8 @@ const Subscription = () => {
             ref={form}
             onSubmit={handleSubmit}
           >
+            <input type="hidden" name="source" value="Barnabas.one" />
+
             <div className="flex items-center w-full gap-2 bg-white rounded-full pl-8 pr-2">
               <input
                 className="w-full bg-transparent text-goodBlue text-base box-border outline-none placeholder:text-goodBlue block px-2.5 py-2 leading-5 font-normal border-none pr-4 pl-0"
